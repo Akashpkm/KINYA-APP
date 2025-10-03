@@ -40,35 +40,35 @@ const Products = () => {
         { 
           id: 'posterior', 
           name: 'POSTERIOR', 
-          image: '/images/POSTERIOR.png', 
+          image: './images/POSTERIOR.png', 
           description: 'Advanced posterior vitrectomy system with precision cutting technology.',
           features: ['Precision Cutting', 'Advanced Visualization', 'Safety Features']
         },
         { 
           id: 'phaco', 
           name: 'PHACO', 
-          image: '/images/PHACO1.png', 
+          image: './images/PHACO1.png', 
           description: 'Integrated phacoemulsification and vitrectomy system.',
           features: ['Dual Function', 'High Efficiency', 'Compact Design']
         },
         { 
           id: 'ant-vit', 
           name: 'ANTERIOR', 
-          image: '/images/ANTERIOR.png', 
+          image: './images/ANTERIOR.png', 
           description: 'Compact anterior vitrectomy system for delicate procedures.',
           features: ['Compact Size', 'Precision Control', 'Easy Handling']
         },
         { 
           id: 'air-injection', 
           name: 'AIR INJECTION MODULE', 
-          image: '/images/AIR-INJ.png', 
+          image: './images/AIR-INJ.png', 
           description: 'Precise air pressure control module for vitreoretinal surgery.',
           features: ['Precise Control', 'Safety Lock', 'Digital Display']
         },
         { 
           id: 'light-source', 
           name: 'LIGHT SOURCE', 
-          image: '/images/LIGHTSOURCE.png', 
+          image: './images/LIGHTSOURCE.png', 
           description: 'High-intensity LED illumination system for optimal visualization.',
           features: ['LED Technology', 'Adjustable Intensity', 'Cool Operation']
         }
@@ -82,7 +82,7 @@ const Products = () => {
         { 
           id: 'abp-scan', 
           name: 'A/B/P SCAN', 
-          image: '/images/ABP_SCAN.png', 
+          image: './images/ABP_SCAN.png', 
           description: 'Complete diagnostic system with A-scan, B-scan, and P-scan capabilities.',
           features: ['Multi-Function', 'High Resolution', 'User-Friendly']
         }
@@ -96,21 +96,21 @@ const Products = () => {
         { 
           id: 'autoclave', 
           name: 'AUTOCLAVE', 
-          image: '/images/AUTOCLAVE.png', 
+          image: './images/AUTOCLAVE.png', 
           description: 'High-pressure autoclave for thorough sterilization.',
           features: ['High Pressure', 'Fast Cycle', 'Safety Certified']
         },
         { 
           id: 'plasma', 
           name: 'PLASMA', 
-          image: '/images/PLASMA.png', 
+          image: './images/PLASMA.png', 
           description: 'Low-temperature plasma sterilization technology.',
           features: ['Low Temperature', 'Plasma Tech', 'Gentle Sterilization']
         },
         { 
           id: 'eto', 
           name: 'ETO', 
-          image: '/images/ETO.png', 
+          image: './images/ETO.png', 
           description: 'Ethylene oxide sterilization for sensitive equipment.',
           features: ['Gas Sterilization', 'Sensitive Materials', 'Thorough Penetration']
         }

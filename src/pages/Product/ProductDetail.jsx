@@ -38,8 +38,8 @@ const salesContact = {
 const productDetails = {
   'posterior': {
     title: 'POSTERIOR VITRECTOMY SYSTEM',
-    image: '/images/POSTERIOR.png',
-    brochure: '/BROCHURES/brochure.pdf',
+    image: './images/POSTERIOR.png',
+    brochure: './BROCHURES/brochure.pdf',
     description: 'Advanced ophthalmic surgical system designed for precision vitreoretinal procedures with cutting-edge technology.',
     features: [
       'Advanced cutting technology for precise vitreous removal',
@@ -54,24 +54,24 @@ const productDetails = {
       { name: 'Footprint', value: 'Compact mobile cart' }
     ],
     accessories: [
-       { image: '/POST/cassette POSTERIER.png', name: 'Cassette' },
-       { image: '/POST/aktive light pipe.png', name: 'Aktive Light Pipe' },
-      { image: '/POST/diathermy eraser.png', name: 'Diathermy Eraser' },
-      { image: '/ANT/diaTHERMY PROBE.png', name: 'Diathermy Probe' },
-      { image: '/ANT/diathermy forcep.png', name: 'Diathermy  Forcep' },
-      { image: '/ANT/ia tube.png', name: 'IA Tube ' },
-      { image: '/ANT/MITLAB ADAPTER.png', name: 'Mitlab Adapter' },
-       { image: '/ANT/phaco frag.png', name: 'Phaco Frag ' },
-        { image: '/ANT/phaco tray.png', name: 'Phaco Tray' },
-      { image: '/ANT/VGPC.png', name: 'VGPC' },
-       { image: '/ANT/CUTTER.png', name: 'Vitrectomy Cutter-DORC' },
-        { image: '/ANT/VITRECTOMY CUTTER-MIDLAB.png', name: 'Vitrectomy Cutter-Mitlab' },
+       { image: './POST/cassette POSTERIER.png', name: 'Cassette' },
+       { image: './POST/aktive light pipe.png', name: 'Aktive Light Pipe' },
+      { image: './POST/diathermy eraser.png', name: 'Diathermy Eraser' },
+      { image: './ANT/diaTHERMY PROBE.png', name: 'Diathermy Probe' },
+      { image: './ANT/diathermy forcep.png', name: 'Diathermy  Forcep' },
+      { image: './ANT/ia tube.png', name: 'IA Tube ' },
+      { image: './ANT/MITLAB ADAPTER.png', name: 'Mitlab Adapter' },
+       { image: './ANT/phaco frag.png', name: 'Phaco Frag ' },
+        { image: './ANT/phaco tray.png', name: 'Phaco Tray' },
+      { image: './ANT/VGPC.png', name: 'VGPC' },
+       { image: './ANT/CUTTER.png', name: 'Vitrectomy Cutter-DORC' },
+        { image: './ANT/VITRECTOMY CUTTER-MIDLAB.png', name: 'Vitrectomy Cutter-Mitlab' },
     ]
   },
   'phaco': {
     title: 'PHACO VITRECTOMY SYSTEM',
-    image: '/images/PHACO1.png',
-    brochure: '/BROCHURES/PHACO.pdf',
+    image: './images/PHACO1.png',
+    brochure: './BROCHURES/PHACO.pdf',
     description: 'Advanced ophthalmic surgical system designed for precision vitreoretinal procedures with cutting-edge technology.',
     features: [
       'Advanced cutting technology for precise vitreous removal',
@@ -86,17 +86,17 @@ const productDetails = {
       { name: 'Footprint', value: 'Compact mobile cart' }
     ],
     accessories: [
-      { image: '/PHACO/cassette-phaco.png', name: 'Cassette' },
-      { image: '/PHACO/diathermy eraser.png', name: 'Diathermy Eraser' },
-      { image: '/PHACO/diaTHERMY PROBE.png', name: 'Diathermy Probe' },
-      { image: '/PHACO/diathermy forcep.png', name: 'Diathermy  Forcep' },
-      { image: '/PHACO/ia tube.png', name: 'IA Tube ' },
-      { image: '/PHACO/MITLAB ADAPTER.png', name: 'Mitlab Adapter' },
-       { image: '/PHACO/phaco frag.png', name: 'Phaco Frag ' },
-        { image: '/PHACO/phaco tray.png', name: 'Phaco Tray' },
-      { image: '/PHACO/VGPC.png', name: 'VGPC' },
-       { image: '/PHACO/CUTTER.png', name: 'Vitrectomy Cutter-DORC' },
-        { image: '/PHACO/VITRECTOMY CUTTER-MIDLAB.png', name: 'Vitrectomy Cutter-Mitlab' },]
+      { image: './PHACO/cassette-phaco.png', name: 'Cassette' },
+      { image: './PHACO/diathermy eraser.png', name: 'Diathermy Eraser' },
+      { image: './PHACO/diaTHERMY PROBE.png', name: 'Diathermy Probe' },
+      { image: './PHACO/diathermy forcep.png', name: 'Diathermy  Forcep' },
+      { image: './PHACO/ia tube.png', name: 'IA Tube ' },
+      { image: './PHACO/MITLAB ADAPTER.png', name: 'Mitlab Adapter' },
+       { image: './PHACO/phaco frag.png', name: 'Phaco Frag ' },
+        { image: './PHACO/phaco tray.png', name: 'Phaco Tray' },
+      { image: './PHACO/VGPC.png', name: 'VGPC' },
+       { image: './PHACO/CUTTER.png', name: 'Vitrectomy Cutter-DORC' },
+        { image: './PHACO/VITRECTOMY CUTTER-MIDLAB.png', name: 'Vitrectomy Cutter-Mitlab' },]
   },
   'ant-vit': {
     title: 'ANT_VIT VITRECTOMY SYSTEM',
@@ -116,23 +116,23 @@ const productDetails = {
       { name: 'Footprint', value: 'Compact mobile cart' }
     ],
     accessories: [
-       { image: '/ANT/cassette-anterior.png', name: 'Cassette' },
-      { image: '/ANT/diathermy eraser.png', name: 'Diathermy Eraser' },
-      { image: '/ANT/diaTHERMY PROBE.png', name: 'Diathermy Probe' },
-      { image: '/ANT/diathermy forcep.png', name: 'Diathermy  Forcep' },
-      { image: '/ANT/ia tube.png', name: 'IA Tube ' },
-      { image: '/ANT/MITLAB ADAPTER.png', name: 'Mitlab Adapter' },
-       { image: '/ANT/phaco frag.png', name: 'Phaco Frag ' },
-        { image: '/ANT/phaco tray.png', name: 'Phaco Tray' },
-      { image: '/ANT/VGPC.png', name: 'VGPC' },
-       { image: '/ANT/CUTTER.png', name: 'Vitrectomy Cutter-DORC' },
-        { image: '/ANT/VITRECTOMY CUTTER-MIDLAB.png', name: 'Vitrectomy Cutter-Mitlab' },
+       { image: './ANT/cassette-anterior.png', name: 'Cassette' },
+      { image: './ANT/diathermy eraser.png', name: 'Diathermy Eraser' },
+      { image: './ANT/diaTHERMY PROBE.png', name: 'Diathermy Probe' },
+      { image: './ANT/diathermy forcep.png', name: 'Diathermy  Forcep' },
+      { image: './ANT/ia tube.png', name: 'IA Tube ' },
+      { image: './ANT/MITLAB ADAPTER.png', name: 'Mitlab Adapter' },
+       { image: './ANT/phaco frag.png', name: 'Phaco Frag ' },
+        { image: './ANT/phaco tray.png', name: 'Phaco Tray' },
+      { image: './ANT/VGPC.png', name: 'VGPC' },
+       { image: './ANT/CUTTER.png', name: 'Vitrectomy Cutter-DORC' },
+        { image: './ANT/VITRECTOMY CUTTER-MIDLAB.png', name: 'Vitrectomy Cutter-Mitlab' },
     ]
   },
   'air-injection': {
     title: 'AIR_INJECTION VITRECTOMY SYSTEM',
-    image: '/images/AIR-INJ.png',
-    brochure: '/brochures/posterior-brochure.pdf',
+    image: './images/AIR-INJ.png',
+    brochure: './brochures/posterior-brochure.pdf',
     description: 'Advanced ophthalmic surgical system designed for precision vitreoretinal procedures with cutting-edge technology.',
     features: [
       'Advanced cutting technology for precise vitreous removal',
@@ -147,17 +147,17 @@ const productDetails = {
       { name: 'Footprint', value: 'Compact mobile cart' }
     ],
     accessories: [
-      { image: '/images/accessory1.png', name: 'Vitrectomy Probe' },
-      { image: '/images/accessory2.png', name: 'Illumination Fiber' },
-      { image: '/images/accessory3.png', name: 'Infusion Cannula' },
-      { image: '/images/accessory4.png', name: 'Cutting Tips' },
-      { image: '/images/accessory5.png', name: 'Fluid Management Set' }
+      { image: './images/accessory1.png', name: 'Vitrectomy Probe' },
+      { image: './images/accessory2.png', name: 'Illumination Fiber' },
+      { image: './images/accessory3.png', name: 'Infusion Cannula' },
+      { image: './images/accessory4.png', name: 'Cutting Tips' },
+      { image: './images/accessory5.png', name: 'Fluid Management Set' }
     ]
   },
   'light-source': {
     title: 'LIGHT SOURCE VITRECTOMY SYSTEM',
-    image: '/images/LIGHTSOURCE.png',
-    brochure: '/brochures/posterior-brochure.pdf',
+    image: './images/LIGHTSOURCE.png',
+    brochure: './brochures/posterior-brochure.pdf',
     description: 'Advanced ophthalmic surgical system designed for precision vitreoretinal procedures with cutting-edge technology.',
     features: [
       'Advanced cutting technology for precise vitreous removal',
@@ -182,9 +182,9 @@ const productDetails = {
   'abp-scan': {
     title: 'DIAGNOSTIC A/B/P SCAN SYSTEM',
     images: [
-      '/images/A_SCAN.png',
-      '/images/B_SCAN.png',
-      '/images/P_SCAN.png'
+      './images/A_SCAN.png',
+      './images/B_SCAN.png',
+      './images/P_SCAN.png'
     ],
     brochure: '/brochures/abp-scan-brochure.pdf',
     description: 'Comprehensive diagnostic ultrasound system for ophthalmic applications with A-scan, B-scan, and Pachymetry capabilities.',
