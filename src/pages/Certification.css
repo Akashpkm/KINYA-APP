@@ -1,0 +1,176 @@
+.certification-page {
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+/* Clean Hero Section */
+.certification-hero {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.certification-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.certification-hero p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Content Section */
+.certification-content {
+  padding: 80px 0;
+}
+
+.certification-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Simplified Cards */
+.certification-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.certification-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Image Styling */
+.certification-image {
+  margin-bottom: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.certification-image img {
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Content Styling */
+.certification-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.certification-info h3 {
+  color: var(--text-color);
+  margin-bottom: 12px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.cert-description {
+  color: var(--text-color);
+  margin-bottom: 20px;
+  line-height: 1.5;
+  opacity: 0.8;
+  flex-grow: 1;
+}
+
+.cert-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
+}
+
+.cert-issuer {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.cert-date {
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: rgba(var(--primary-rgb), 0.1);
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+/* Dark Theme */
+body.dark-theme .certification-card {
+  background: var(--card-bg-dark);
+  border-color: var(--border-color-dark);
+}
+
+body.dark-theme .certification-info h3,
+body.dark-theme .cert-description {
+  color: var(--text-color-dark);
+}
+
+body.dark-theme .cert-meta {
+  border-top-color: var(--border-color-dark);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .certification-page {
+    padding-top: 70px;
+  }
+  
+  .certification-hero {
+    padding: 40px 0;
+  }
+  
+  .certification-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .certification-content {
+    padding: 40px 0;
+  }
+  
+  .certification-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 16px;
+  }
+  
+  .certification-card {
+    padding: 20px;
+  }
+  
+  .cert-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .certification-hero h1 {
+    font-size: 1.75rem;
+  }
+  
+  .certification-hero p {
+    font-size: 1rem;
+  }
+}
