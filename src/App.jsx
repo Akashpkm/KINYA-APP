@@ -28,7 +28,8 @@ function App() {
         </Routes>
         <Footer />
       </div>
-    </Router>
+    </Router>,
+    <BrowserRouter basename="/KINYA-APP"></BrowserRouter>
   );
 }
 
