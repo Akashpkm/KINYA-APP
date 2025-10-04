@@ -1,37 +1,49 @@
 // src/pages/About.jsx
 import React, { useEffect, useRef } from 'react';
 import './About.css';
-import img from './images/PHACO.png'
+import img from '/ABOUT/GROUP.jpeg'
 
 function About() {
   const teamMembers = [
-    {
-      id: 1,
-      name: 'Dr. James Kariuki',
-      role: 'Medical Director',
-      image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
-      bio: '15+ years of experience in medical equipment procurement and healthcare management.'
-    },
+  {
+    id: 1,
+    name: 'Dr. James Kariuki',
+    role: 'Medical Director',
+    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
+    bio: '15+ years of experience in medical equipment procurement and healthcare management.',
+    email: 'james.kariuki@kinyamedical.com',
+    linkedin: 'https://linkedin.com/in/jameskariuki',
+    twitter: 'https://twitter.com/jameskariuki'
+  },
     {
       id: 2,
-      name: 'Sarah Mwende',
-      role: 'Pharmaceuticals Manager',
-      image: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
-      bio: 'Expert in pharmaceutical supply chain with a focus on quality assurance.'
+    name: 'Dr. James Kariuki',
+    role: 'Medical Director',
+    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
+    bio: '15+ years of experience in medical equipment procurement and healthcare management.',
+    email: 'james.kariuki@kinyamedical.com',
+    linkedin: 'https://linkedin.com/in/jameskariuki',
+    twitter: 'https://twitter.com/jameskariuki'
     },
     {
       id: 3,
-      name: 'Michael Otieno',
-      role: 'Technical Support Lead',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
-      bio: 'Certified biomedical engineer with expertise in medical equipment maintenance.'
+    name: 'Dr. James Kariuki',
+    role: 'Medical Director',
+    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
+    bio: '15+ years of experience in medical equipment procurement and healthcare management.',
+    email: 'james.kariuki@kinyamedical.com',
+    linkedin: 'https://linkedin.com/in/jameskariuki',
+    twitter: 'https://twitter.com/jameskariuki'
     },
     {
-      id: 4,
-      name: 'Grace Wanjiku',
-      role: 'Customer Relations',
-      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
-      bio: 'Dedicated to ensuring client satisfaction and building long-term partnerships.'
+     id: 4,
+    name: 'Dr. James Kariuki',
+    role: 'Medical Director',
+    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
+    bio: '15+ years of experience in medical equipment procurement and healthcare management.',
+    email: 'james.kariuki@kinyamedical.com',
+    linkedin: 'https://linkedin.com/in/jameskariuki',
+    twitter: 'https://twitter.com/jameskariuki'
     }
   ];
 
@@ -78,8 +90,8 @@ function About() {
           <div className="mission-content">
             <div className="mission-text fade-in-left">
               <h2>Our Mission</h2>
-              <p>At Kinya Medical, our mission is to enhance healthcare delivery across Kenya by providing high-quality medical equipment, pharmaceuticals, and support services to healthcare facilities of all sizes.</p>
-              <p>We believe that every Kenyan deserves access to reliable medical care, and we work tirelessly to ensure that healthcare providers have the tools and resources they need to deliver exceptional patient care.</p>
+              <p>At Kinya Medical, our mission is to Enhance Healthcare Delivery across Kinya by providing High-quality Medical Equipment and Support Services to Healthcare facilities of all sizes.</p>
+              <p>We believe that every Kinya deserves access to Reliable Medical Care, and we work tirelessly to ensure that Healthcare Providers have the Tools and Resources they need to Deliver Exceptional Patient Care.</p>
             </div>
             <div className="mission-image fade-in-right">
               <img src={img} alt="Medical team" />
@@ -120,40 +132,52 @@ function About() {
               { 
                 title: 'OFFICE & MANUFACTURING', 
                 address: 'No 46 Ranga Rice Mill, Rani Anna Nagar, Somanathapuram, Guduvancheri, Tamil Nadu, India',
-                contact: 'Mr Mohapatra',
-                phone: '63232323232'
+                contact: 'Mr Tibertius Kiran Kumar Fernando',
+                phone: '+91 8056805837',
+                alternatePhone: ' +91 9789041308',
+                email: 'sales@kinya.in'
               },
               { 
                 title: 'DELHI OFFICE', 
-                address: 'Intotech Genesis, Delhi, India',
+                address: 'Innotech Genesis pvt ltd House no 5 sec 12 vasundhara ghaziabad up -201012',
                 contact: 'Mr Mohapatra',
-                phone: '63232323232'
+                phone: '+91 8882117448',
+                alternatePhone: '+91 63232 323233',
+                email: 'sales@innotechgenesis.com'
               },
               { 
                 title: 'BANGALORE OFFICE', 
-                address: 'Sri Kani, Bangalore, India',
-                contact: 'Mr Asholcan',
-                phone: '63232323232'
+                address: 'SRI KANI #724, SRI KANISHKA,11TH BLOCK, BSK 6TH STAGE,BDA LAYOUT, BEHIND ARVIND TATA MOTORS,KENGERI POST,BENGALURU - 560060.KARNATAKA',
+                contact: 'Mr Ashokana',
+                phone: '+91 9880264118',
+                alternatePhone: '+91 7795255782',
+                email: ' ashokana81@gmail.com'
               },
               { 
                 title: 'MUMBAI OFFICE', 
                 address: 'Kim, Mumbai, India',
                 contact: 'Mr. Saravanan',
-                phone: '63232323232'
+                phone: '63232323232',
+                alternatePhone: '+91 63232 323233',
+                email: 'mohapatra@kinyamedical.com'
               },
                { 
                 title: 'HYDERABAD OFFICE', 
-                address: 'Kim, Mumbai, India',
-                contact: 'Mr. Saravanan',
-                phone: '63232323232'
+                address: 'Plot No:46, Ganesh Nagar, West Marredpally, Secunderabad-500026',
+                contact: 'Mr. Srinivas Rao',
+                phone: '+91 9505018225',
+                alternatePhone: '040-35849129',
+                email: 'mohapatra@kinyamedical.com'
               }
             ].map((office, index) => (
               <div key={index} className="office-card slide-up" style={{ animationDelay: `${index * 0.1}s` }}>
                 <h3>{office.title}</h3>
                 <p>{office.address}</p>
                 <div className="contact-info">
-                  <strong>Contact: {office.contact}</strong>
-                  <span>{office.phone}</span>
+                  <strong style={{color:'green'}}>Contact : {office.contact}</strong>
+                  <strong>PhoneNo : <span>{office.phone}</span></strong>
+                  <strong>Alter No : <span>{office.alternatePhone}</span></strong>
+                  <strong style={{color:'deepskyblue'}}>Email : <span>{office.email}</span></strong>
                 </div>
               </div>
             ))}

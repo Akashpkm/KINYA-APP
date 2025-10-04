@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Products.css';
 
+
 const Products = () => {
   const [activeCategory, setActiveCategory] = useState('all');
   const [currentTheme, setCurrentTheme] = useState('light');
@@ -34,41 +35,41 @@ const Products = () => {
   const productCategories = [
     {
       id: 'vitrectomy',
-      title: 'OPERATION VITRECTOMY SYSTEM',
+      title: 'POSTERIOR VITRECTOMY AND PHACO EMULSIFICATION',
       icon: '🔬',
       products: [
         { 
           id: 'posterior', 
-          name: 'POSTERIOR', 
-          image: '/images/POSTERIOR.png', 
-          description: 'Advanced posterior vitrectomy system with precision cutting technology.',
-          features: ['Precision Cutting', 'Advanced Visualization', 'Safety Features']
+          name: 'POSTERIOR VITRECTOMY SYSTEM & PHACO', 
+          image: './images/POSTERIOR.png', 
+          description: 'Advanced Posterior Vitrectomy System with Precision Cutting Technology.',
+          features: ['10000 Cuts Per Min', 'Fast Vacuum Rise', 'Enhanced Visualization of Retinal','Advanced Fluidics','Multi Functional Foot Pedal']
         },
         { 
           id: 'phaco', 
-          name: 'PHACO', 
-          image: '/images/PHACO1.png', 
-          description: 'Integrated phacoemulsification and vitrectomy system.',
-          features: ['Dual Function', 'High Efficiency', 'Compact Design']
+          name: 'PHACO EMULSIFICATION', 
+          image: './images/PHACO1.png', 
+          description: 'Advanced Phacoemulsification and Anterior Vitrectomy ',
+          features: ['Advanced Fluidics ', 'High Cutting Efficiency', 'Enhanced Safety']
         },
         { 
           id: 'ant-vit', 
-          name: 'ANTERIOR', 
-          image: '/images/ANTERIOR.png', 
+          name: 'ANT_VIT VITRECTOMY ', 
+          image: './images/ANTERIOR.png', 
           description: 'Compact anterior vitrectomy system for delicate procedures.',
           features: ['Compact Size', 'Precision Control', 'Easy Handling']
         },
         { 
           id: 'air-injection', 
           name: 'AIR INJECTION MODULE', 
-          image: '/images/AIR-INJ.png', 
+          image: './images/AIR-INJ.png', 
           description: 'Precise air pressure control module for vitreoretinal surgery.',
           features: ['Precise Control', 'Safety Lock', 'Digital Display']
         },
         { 
           id: 'light-source', 
           name: 'LIGHT SOURCE', 
-          image: '/images/LIGHTSOURCE.png', 
+          image: './images/LIGHTSOURCE.png', 
           description: 'High-intensity LED illumination system for optimal visualization.',
           features: ['LED Technology', 'Adjustable Intensity', 'Cool Operation']
         }
@@ -109,7 +110,7 @@ const Products = () => {
         },
         { 
           id: 'eto', 
-          name: 'ETO', 
+          name: 'ETO STERILIZER', 
           image: '/images/ETO.png', 
           description: 'Ethylene oxide sterilization for sensitive equipment.',
           features: ['Gas Sterilization', 'Sensitive Materials', 'Thorough Penetration']

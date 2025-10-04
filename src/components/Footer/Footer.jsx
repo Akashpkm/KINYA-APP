@@ -87,7 +87,7 @@ function Footer() {
         <div className="footer-section">
           <h4 className="footer-heading">Our Products</h4>
           <ul className="footer-links">
-            <li><button onClick={() => handleNavigation('/products')} className="footer-link">Operation Vitrectomy System</button></li>
+            <li><button onClick={() => handleNavigation('/products')} className="footer-link">POSTERIOR VITRECTOMY AND PHACO EMULSIFICATION</button></li>
             <li><button onClick={() => handleNavigation('/products')} className="footer-link">Diagnostic A/B/P Scan</button></li>
             <li><button onClick={() => handleNavigation('/products')} className="footer-link">Sterilizer & Autoclave</button></li>
           </ul>

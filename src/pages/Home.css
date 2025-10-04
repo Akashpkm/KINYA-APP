@@ -17,8 +17,7 @@
   padding: 0 20px;
 }
 
-
-/* Rest of your existing CSS remains the same */
+/* Fixed WhatsApp Button */
 .whatsapp-float {
   position: fixed;
   bottom: 120px;
@@ -482,7 +481,7 @@ section {
   width: 100%;
 }
 
-/* Improved Testimonials Section */
+/* Improved Testimonials Section with Images */
 .testimonials-container {
   overflow: hidden;
   position: relative;
@@ -498,12 +497,6 @@ section {
 
 .testimonials-track:hover {
   animation-play-state: paused;
-}
-
-.testimonials-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 30px;
 }
 
 .testimonial-card {
@@ -562,7 +555,17 @@ section {
 }
 
 .author-avatar {
-  font-size: 2.5rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.author-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .author-info h4 {
@@ -641,7 +644,7 @@ section {
   transform: translateY(-2px);
 }
 
-/* AI Assistant Chat Box */
+/* Enhanced AI Assistant Chat Box for Mobile */
 .ai-assistant {
   position: fixed;
   bottom: 30px;
@@ -693,7 +696,7 @@ section {
   bottom: 80px;
   right: 0;
   width: 380px;
-  height: 500px;
+  height: 550px;
   background: white;
   border-radius: 20px;
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
@@ -721,6 +724,7 @@ section {
   display: flex;
   align-items: center;
   gap: 15px;
+  flex-shrink: 0;
 }
 
 .chat-avatar {
@@ -777,6 +781,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  min-height: 0; /* Important for flexbox scrolling */
 }
 
 .message {
@@ -869,6 +874,7 @@ section {
   }
 }
 
+/* Improved Quick Responses for Mobile */
 .quick-responses {
   padding: 15px 20px;
   display: flex;
@@ -876,6 +882,9 @@ section {
   gap: 8px;
   border-top: 1px solid #e0e0e0;
   background: #f8f9fa;
+  flex-shrink: 0;
+  max-height: 120px;
+  overflow-y: auto;
 }
 
 .dark-theme .quick-responses {
@@ -888,6 +897,7 @@ section {
   color: #666;
   width: 100%;
   margin-bottom: 5px;
+  flex-shrink: 0;
 }
 
 .dark-theme .quick-responses span {
@@ -903,6 +913,8 @@ section {
   font-size: 11px;
   cursor: pointer;
   transition: all 0.3s ease;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .dark-theme .quick-response-btn {
@@ -920,6 +932,7 @@ section {
 .chat-input-form {
   padding: 20px;
   border-top: 1px solid #e0e0e0;
+  flex-shrink: 0;
 }
 
 .dark-theme .chat-input-form {
@@ -974,28 +987,33 @@ section {
 }
 
 /* Scrollbar Styling */
-.chat-messages::-webkit-scrollbar {
+.chat-messages::-webkit-scrollbar,
+.quick-responses::-webkit-scrollbar {
   width: 6px;
 }
 
-.chat-messages::-webkit-scrollbar-track {
+.chat-messages::-webkit-scrollbar-track,
+.quick-responses::-webkit-scrollbar-track {
   background: transparent;
 }
 
-.chat-messages::-webkit-scrollbar-thumb {
+.chat-messages::-webkit-scrollbar-thumb,
+.quick-responses::-webkit-scrollbar-thumb {
   background: #ccc;
   border-radius: 3px;
 }
 
-.dark-theme .chat-messages::-webkit-scrollbar-thumb {
+.dark-theme .chat-messages::-webkit-scrollbar-thumb,
+.dark-theme .quick-responses::-webkit-scrollbar-thumb {
   background: #555;
 }
 
-.chat-messages::-webkit-scrollbar-thumb:hover {
+.chat-messages::-webkit-scrollbar-thumb:hover,
+.quick-responses::-webkit-scrollbar-thumb:hover {
   background: #667eea;
 }
 
-/* Responsive Design */
+/* Enhanced Responsive Design */
 @media (max-width: 768px) {
   .container {
     padding: 0 15px;
@@ -1028,8 +1046,7 @@ section {
     font-size: 2rem;
   }
 
-  .features-grid,
-  .testimonials-grid {
+  .features-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1043,33 +1060,85 @@ section {
     align-items: center;
   }
 
+  /* Enhanced Testimonials for Mobile */
+  .testimonials-container {
+    mask: linear-gradient(90deg, transparent, white 5%, white 95%, transparent);
+  }
+
+  .testimonial-card {
+    flex: 0 0 280px;
+    padding: 30px 20px;
+  }
+
+  .author-avatar {
+    width: 50px;
+    height: 50px;
+  }
+
+  .author-info h4 {
+    font-size: 1.1rem;
+  }
+
+  .author-info p,
+  .author-info span {
+    font-size: 0.8rem;
+  }
+
+  /* Enhanced AI Assistant for Mobile */
   .ai-assistant {
     bottom: 20px;
     right: 20px;
   }
   
   .ai-chat-box {
-    width: 320px;
-    height: 450px;
+    height: 75vh;
     bottom: 70px;
+    right: 0;
+    border-radius: 20px 20px 20px 20px;
   }
-  
+
   .ai-chat-toggle {
     width: 50px;
     height: 50px;
     font-size: 18px;
   }
 
-  .testimonial-card {
-    flex: 0 0 280px;
+  .chat-messages {
+    padding: 15px;
+  }
+
+  .quick-responses {
+    max-height: 100px;
+    padding: 12px 15px;
+  }
+
+  .quick-response-btn {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
+  .whatsapp-float {
+    bottom: 90px;
+    right: 20px;
+  }
+
+  .whatsapp-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+
+  .pulse-animation {
+    width: 50px;
+    height: 50px;
   }
 }
 
 @media (max-width: 480px) {
   .ai-chat-box {
-    width: 280px;
-    height: 400px;
-    right: -10px;
+    height: 75vh;
+    right: 0;
+    border-radius: 20px 20px 20px 20px;
   }
 
   .section-title {
@@ -1086,11 +1155,40 @@ section {
 
   .testimonial-card {
     flex: 0 0 250px;
-    padding: 30px 20px;
+    padding: 25px 15px;
+  }
+
+  .testimonial-content p {
+    font-size: 1rem;
   }
 
   .whatsapp-float {
-    bottom: 90px;
-    right: 15px;
+    bottom: 80px;
+    right: 20px;
+  }
+
+  .message {
+    max-width: 90%;
+  }
+}
+
+/* Landscape mode adjustments */
+@media (max-height: 600px) and (orientation: landscape) {
+  .ai-chat-box {
+    height: 85vh;
+  }
+  
+  .chat-messages {
+    flex: 0.7;
+  }
+  
+  .quick-responses {
+    max-height: 80px;
+    flex: 0.2;
+  }
+  
+  .chat-input-form {
+    flex: 0.1;
+    padding: 10px 20px;
   }
 }

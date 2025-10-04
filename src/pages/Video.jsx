@@ -10,21 +10,23 @@ function Video() {
   const videoItems = [
     {
       id: 1,
-      title: 'Product Demonstration: Digital Stethoscope',
-      description: 'Watch how our advanced digital stethoscope improves diagnostic accuracy',
-      thumbnail: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
-      duration: '4:25',
-      videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-      youtubeId: 'YE7VzlLtp-4'
+      title: 'Surgery on HOPE using 25G Dual Port Vitrectomy Cutter',
+      description: 'Experience a detailed surgical demonstration of a vitrectomy procedure using the advanced 25G Dual Port Vitrectomy Cutter on the HOPE system. This video showcases the precision, control, and efficiency of modern microincision vitrectomy surgery, highlighting the advantages of dual-port technology in improving visualization, fluidics, and surgical outcomes.',
+      thumbnail: '/THUMB/THUMB1.png',
+      duration: '11:08',
+      videoUrl: 'https://www.youtube.com/embed/0WHkJ60rDFc?si=-2FSOIytWbToq1JU',
+      youtubeId: '0WHkJ60rDFc',
+      type: 'youtube'
     },
     {
       id: 2,
-      title: 'Training: Proper Use of Portable Ultrasound',
-      description: 'Learn how to effectively use our handheld ultrasound device',
-      thumbnail: 'https://images.unsplash.com/photo-1592116462606-6bff5a9f8ef5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
-      duration: '7:42',
-      videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
-      youtubeId: 'mb4n2V-8CjE'
+      title: 'TRD Surgery on HOPE Vitrectomy system by Dr. Sriramgopal',
+      description: 'Join Dr. Sriramgopal as he performs a Tractional Retinal Detachment (TRD) surgery using the advanced HOPE Vitrectomy System. This video demonstrates key surgical techniques, precision handling, and the superior performance of the HOPE system in managing complex retinal conditions. ',
+      thumbnail: '/THUMB/TUMB2.png',
+      duration: '11:14',
+      videoUrl: 'https://www.youtube.com/embed/FaBGlpKs5E0?si=DwGyz8N8_elEaA8F',
+      youtubeId: 'FaBGlpKs5E0',
+      type: 'youtube'
     },
     {
       id: 3,
@@ -32,35 +34,31 @@ function Video() {
       description: 'Hear from our partners at Nairobi Hospital about their experience with our products',
       thumbnail: 'https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
       duration: '3:15',
-      videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
-      youtubeId: 'XIMLoLxmTDw'
+      videoUrl: 'https://www.facebook.com/share/v/1EBbCAdo5m/',
+      youtubeId: 'XIMLoLxmTDw',
+      type: 'youtube'
     },
     {
       id: 4,
-      title: 'Introduction to Our Pharmaceutical Division',
-      description: 'Learn about our quality control processes for pharmaceuticals',
-      thumbnail: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
-      duration: '5:33',
-      videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
-      youtubeId: 't4nM1FoUqY8'
+      title: 'Dr.Ruchir - Diabetic surgery using Constellation Cutter on HOPE vitrectomy',
+      description: 'Watch Dr. Ruchir perform a diabetic vitrectomy surgery using the Constellation Cutter on the HOPE Vitrectomy System. This video highlights the precision, stability, and advanced control offered by the HOPE platform in managing diabetic retinal complications. A valuable educational resource for ophthalmic surgeons and medical professionals focusing on modern vitreoretinal surgical innovations.',
+      thumbnail: '/THUMB/THUMB3.png',
+      duration: '11:14',
+      videoUrl: 'https://drive.google.com/file/d/1OYJfpZIpEhJs9iHN6n3cLq-UHn9btEVZ/preview',
+      youtubeId: '',
+      type: 'drive'
     },
+  
+    
     {
       id: 5,
-      title: 'Maintenance Guide: Surgical Instruments',
-      description: 'Proper care and maintenance procedures for surgical instruments',
-      thumbnail: 'https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
-      duration: '6:18',
-      videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
-      youtubeId: '1H1mZWu9WvI'
-    },
-    {
-      id: 6,
-      title: 'ECG Machine Setup and Operation',
-      description: 'Step-by-step guide to setting up and using our ECG machines',
-      thumbnail: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
-      duration: '8:07',
-      videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4',
-      youtubeId: '0ZkAe_7XaA8'
+      title: 'Managieng an Aphakic Retinal Detachment with Pars Plana Vitrectomy (PPV + EL + SOI).',
+      description: 'This surgical video demonstrates the management of an aphakic retinal detachment using Pars Plana Vitrectomy (PPV) combined with Endolaser (EL) and Silicone Oil Injection (SOI). The procedure showcases precise surgical techniques, effective retinal stabilization, and postoperative management strategies. An excellent educational resource for ophthalmic surgeons and trainees.',
+      thumbnail: '/THUMB/THUMB4.png',
+      duration: '9:32',
+      videoUrl: 'https://www.youtube.com/embed/xpXXRgzLYxc?si=AH6LTCA04kFEiTx6', // Google Drive video
+      youtubeId: 'AH6LTCA04kFEiTx6',
+      type: 'drive'
     }
   ];
 
@@ -70,8 +68,9 @@ function Video() {
     description: 'Learn about our company mission, values, and the range of products and services we offer to healthcare providers across Kenya.',
     thumbnail: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     duration: '10:35',
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-    youtubeId: 'YE7VzlLtp-4'
+    videoUrl: '/videos/company-intro.mp4', // Local video
+    youtubeId: '',
+    type: 'local'
   };
 
   // Detect theme changes from navbar
@@ -95,15 +94,27 @@ function Video() {
   }, []);
 
   const openVideoModal = (video) => {
-    setPlayingVideo(video);
-    setIsModalOpen(true);
-    document.body.style.overflow = 'hidden';
+    // Immediately scroll to top
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+    
+    // Small delay to ensure scroll completes before modal opens
+    setTimeout(() => {
+      setPlayingVideo(video);
+      setIsModalOpen(true);
+      document.body.style.overflow = 'hidden';
+      document.body.style.position = 'fixed';
+      document.body.style.width = '100%';
+    }, 300);
   };
 
   const closeVideoModal = () => {
     setIsModalOpen(false);
     setPlayingVideo(null);
     document.body.style.overflow = 'auto';
+    document.body.style.position = 'static';
   };
 
   // Close modal on Escape key press
@@ -123,21 +134,62 @@ function Video() {
     };
   }, [isModalOpen]);
 
-  const VideoPlayer = ({ video }) => (
-    <div className="video-player-container">
-      <div className="video-wrapper">
-        <iframe
-          width="100%"
-          height="100%"
-          src={`https://www.youtube.com/embed/${video.youtubeId}?autoplay=1`}
-          title={video.title}
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </div>
-    </div>
-  );
+  const VideoPlayer = ({ video }) => {
+    if (video.type === 'youtube' && video.youtubeId) {
+      return (
+        <div className="video-player-container">
+          <div className="video-wrapper">
+            <iframe
+              width="100%"
+              height="100%"
+              src={`https://www.youtube.com/embed/${video.youtubeId}?autoplay=1`}
+              title={video.title}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      );
+    } else if (video.type === 'drive') {
+      // Google Drive video
+      return (
+        <div className="video-player-container">
+          <div className="video-wrapper">
+            <iframe
+              width="100%"
+              height="100%"
+              src={video.videoUrl}
+              title={video.title}
+              frameBorder="0"
+              allow="autoplay"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      );
+    } else {
+      // Local video or direct URL
+      return (
+        <div className="video-player-container">
+          <div className="video-wrapper">
+            <video
+              controls
+              autoPlay
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'contain'
+              }}
+            >
+              <source src={video.videoUrl} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      );
+    }
+  };
 
   return (
     <div className={`video-page ${currentTheme}`}>
@@ -218,9 +270,6 @@ function Video() {
                     >
                       <i className="fas fa-play"></i> Watch Video
                     </button>
-                    <button className="save-btn" aria-label="Save video">
-                      <i className="far fa-bookmark"></i>
-                    </button>
                   </div>
                 </div>
               </div>
@@ -229,7 +278,7 @@ function Video() {
         </div>
       </div>
 
-      {/* Video Modal */}
+      {/* Video Modal - Always positioned at top */}
       {isModalOpen && playingVideo && (
         <div className="video-modal">
           <div className="modal-overlay" onClick={closeVideoModal}></div>

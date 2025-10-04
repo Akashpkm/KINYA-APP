@@ -49,6 +49,20 @@ function Navbar({ onThemeChange }) {
     setIsDarkTheme(!isDarkTheme);
   };
 
+  // Scroll to top function
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  // Enhanced navigation handler
+  const handleNavigation = () => {
+    closeMobileMenu();
+    scrollToTop();
+  };
+
   // Determine active section based on current route
   const getActiveSection = () => {
     const path = location.pathname;
@@ -74,7 +88,14 @@ function Navbar({ onThemeChange }) {
     <>
       <nav className={`navbar ${isScrolled ? 'scrolled' : ''} ${isDarkTheme ? 'dark' : 'light'}`}>
         <div className="nav-container">
-          <Link to="/" className="nav-logo" onClick={closeMobileMenu}>
+          <Link 
+            to="/" 
+            className="nav-logo" 
+            onClick={() => {
+              closeMobileMenu();
+              scrollToTop();
+            }}
+          >
             <div className="logo-container">
               <img src={img} alt="Kinya Medical System Logo" />
               <div className="logo-text">
@@ -90,7 +111,7 @@ function Navbar({ onThemeChange }) {
                 <Link 
                   to={item.path}
                   className={`nav-link ${getActiveSection() === item.id ? 'active' : ''}`}
-                  onClick={closeMobileMenu}
+                  onClick={handleNavigation}
                 >
                   <i className={item.icon}></i>
                   <span>{item.label}</span>

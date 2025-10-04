@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import './Home.css';
 import backgroundVideo from "./images/vi.mp4";
 
+
 function Home() {
   const statsRef = useRef(null);
   const chatBoxRef = useRef(null);
@@ -20,8 +21,14 @@ function Home() {
   const [inputMessage, setInputMessage] = useState('');
   const [isTyping, setIsTyping] = useState(false);
 
-  // AI Responses database
+  // Auto-scroll to top on refresh
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  // AI Responses database (keep your existing aiResponses object)
   const aiResponses = {
+    // ... (your existing aiResponses object remains the same)
     greetings: [
       "Hello! I'm Kinya Medical AI assistant. How can I help you today?",
       "Hi there! Welcome to Kinya Medical. What can I assist you with?",
@@ -68,6 +75,50 @@ function Home() {
       "That's a great question! Our customer service team can give you the most accurate information. Would you like me to have them contact you?"
     ]
   };
+
+  // Testimonials data with actual images
+  const testimonialsData = [
+    {
+      name: 'Dr Deventra Venkatramani',
+      role: 'VR SURGEON',
+      hospital: 'Laxmi Eye Institute, Panvel',
+      text: 'An excellent value-for-money machine. Comparable to all others in its class And great service support too!',
+      avatar:'/DOCTOR/Deventra Venkatramani.jpg' ,
+      rating: 5
+    },
+    {
+      name: 'Dr.Venkatesh Ambarkar',
+      role: 'VR SURGEON',
+      hospital: 'Prathan Eye Hospital, Solapur.',
+      text: ' I am thrilled to share that I ve been using the HOPE Posterior Vitrectomy machine since February 2023. making me one of its earliest adopters. It s been my go-to equipment for over 250 procedures, from routine. cases to some really challenging vitrectomies. I am genuinely impressed with how reliable and effective it s been love working with it!',
+      avatar: '/DOCTOR/Venkatesh Ambarkar.png',
+      rating: 5
+    },
+    {
+      name: 'Dr. Sriram Gopal',
+      role: 'VR SURGEON',
+      hospital: ' Athreya Eye Hospital, Trichy',
+      text: 'I ve been part of the HOPE Vitrectomy journey since its inception and performing its debut surgery It s exhilarating to see its remarkable progress. My recent experience with the 25G ALCON cutter was truly impressive, during a combined procedure involving phaco and TRD surgery. What stood out to me was the cutters exceptional precision and the seamless fluid management, which made the entire process incredibly smooth.',
+      avatar: '/DOCTOR/Sriram Gopal.png',
+      rating: 5
+    },
+    {
+      name: 'Dr.Abhishek Kothari',
+      role: 'VR SURGEON',
+      hospital: 'Pink City Eye Hospital, Jaipur',
+      text: 'We have been using thr Kinya HOPE platform since its very inception, till its latest iteration and very happy with its performance and reliability. The constant improvements in the interface and the fluidics indicates the ongoing commitment of the companys engineering team to respond to user feedback. It is now a great product capable of use in a wide variety of surgical situations. The versatility to use consumables from multiple vendors also makes the system very attractive. We highly recommend the platform for anyone looking to buy a posterior segment surgical platform.',
+     avatar: '/DOCTOR/Abhishek Kothari.jpg',
+      rating: 5
+    },
+    {
+      name: 'Dr. Anand Bhosle',
+      role: 'VR SURGEON',
+      hospital: 'Aster Hospital,Kholapur',
+      text: 'I tested the HOPE Vitrectomy from Kinya Medical System across three cases. The 16,000-cut speed was flawless, and globe stability at 600mmHg vacuum was excellent. I suggest trying a demo first.',
+      avatar: '/DOCTOR/Anand Bhosle.jpeg',
+      rating: 5
+    },
+  ];
 
   // Detect theme change from navbar
   useEffect(() => {
@@ -223,10 +274,14 @@ function Home() {
       }, 1500);
     }, 100);
   };
+  
 
-  // WhatsApp button handler
+  // Fixed WhatsApp button handler
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/c/918056805837', '_blank', 'noopener,noreferrer');
+    const phoneNumber = "918056805837"; // Your WhatsApp number
+    const message = "Hello! I'm interested in Kinya Medical products and services.";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   };
 
   // Stats counting animation
@@ -291,15 +346,15 @@ function Home() {
                 <span className="title-line">Your Access</span>
               </h1>
               <p className="hero-subtitle">
-                Providing cutting-edge medical solutions, equipment, and pharmaceuticals 
-                to healthcare facilities across Kenya with excellence and reliability.
+                Providing Cutting-Edge Medical Equipment, and Devices
+                to Hospitals across India and Overseas with Excellence and Reliability.
               </p>
               <div className="hero-buttons">
-                <a href="#products" className="btn btn-primary">
+                <a href="/products" className="btn btn-primary">
                   <span>Explore Products</span>
                   <i className="fas fa-arrow-right"></i>
                 </a>
-                <a href="tel:+254700000000" className="btn btn-secondary">
+                <a href="tel:+91 80568 05837" className="btn btn-secondary">
                   <span>Call Now</span>
                   <i className="fas fa-phone"></i>
                 </a>
@@ -331,9 +386,9 @@ function Home() {
       <section className="features">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title">Why Choose Kinya Medical?</h2>
+            <h2 className="section-title">Why Choose Kinya Medical Systems ?</h2>
             <p className="section-subtitle">
-              Excellence in healthcare delivery through innovation, quality, and dedicated support
+              Excellence in Healthcare Delivery through Innovation, Quality and Dedicated Support
             </p>
           </div>
           <div className="features-grid">
@@ -424,56 +479,7 @@ function Home() {
           </div>
           <div className="testimonials-container" ref={testimonialsRef}>
             <div className="testimonials-track" ref={testimonialsTrackRef}>
-              {[
-                {
-                  name: 'Dr. Sarah Kimani',
-                  role: 'Chief Medical Officer',
-                  hospital: 'Nairobi General Hospital',
-                  text: 'Kinya Medical has been instrumental in upgrading our facility with state-of-the-art equipment that has significantly improved patient care outcomes.',
-                  avatar: '👩‍⚕️',
-                  rating: 5
-                },
-                {
-                  name: 'Dr. James Omondi',
-                  role: 'Hospital Director',
-                  hospital: 'Mombasa Coastal Medical',
-                  text: 'Their support team is exceptional - always available, knowledgeable, and responsive to our needs. A true partnership in healthcare delivery.',
-                  avatar: '👨‍⚕️',
-                  rating: 5
-                },
-                {
-                  name: 'Dr. Grace Wambui',
-                  role: 'Head of Pediatrics',
-                  hospital: 'Kenyatta National Hospital',
-                  text: 'The quality of products and reliability of delivery make Kinya Medical our preferred supplier for all medical equipment needs.',
-                  avatar: '👩‍⚕️',
-                  rating: 5
-                },
-                {
-                  name: 'Dr. Michael Otieno',
-                  role: 'Surgical Department Head',
-                  hospital: 'Aga Khan Hospital',
-                  text: 'The training provided by Kinya Medical has enhanced our surgical team capabilities significantly.',
-                  avatar: '👨‍⚕️',
-                  rating: 5
-                },
-                {
-                  name: 'Dr. Linda Chebet',
-                  role: 'Medical Director',
-                  hospital: 'Nakuru Provincial Hospital',
-                  text: 'Excellent after-sales service and maintenance support. They truly care about their clients.',
-                  avatar: '👩‍⚕️',
-                  rating: 5
-                },
-                {
-                  name: 'Dr. Robert Mwangi',
-                  role: 'ICU Specialist',
-                  hospital: 'Mater Hospital',
-                  text: 'The patient monitoring systems we purchased have revolutionized our critical care unit.',
-                  avatar: '👨‍⚕️',
-                  rating: 5
-                }
-              ].map((testimonial, index) => (
+              {testimonialsData.map((testimonial, index) => (
                 <div key={index} className="testimonial-card">
                   <div className="testimonial-content">
                     <div className="quote-icon">"</div>
@@ -485,7 +491,9 @@ function Home() {
                     </div>
                   </div>
                   <div className="testimonial-author">
-                    <div className="author-avatar">{testimonial.avatar}</div>
+                    <div className="author-avatar">
+                      <img src={testimonial.avatar} alt={testimonial.name} />
+                    </div>
                     <div className="author-info">
                       <h4>{testimonial.name}</h4>
                       <p>{testimonial.role}</p>
@@ -510,7 +518,7 @@ function Home() {
                 <span>Call Now</span>
                 <i className="fas fa-phone"></i>
               </a>
-              <a href="#contact" className="btn btn-outline-light">
+              <a href="/Contact" className="btn btn-outline-light">
                 <span>Contact Us</span>
                 <i className="fas fa-envelope"></i>
               </a>

@@ -537,20 +537,20 @@ body.modal-open {
 .specifications-grid {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 5px;
 }
 
 .spec-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2rem 1.5rem;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.8);
   transition: all 0.3s ease;
   border: 1px solid rgba(102, 126, 234, 0.1);
+  padding-left:8px;
+  padding-right: 8px;
 }
-
 .spec-item:hover {
   background: rgba(102, 126, 234, 0.05);
   transform: translateX(8px);

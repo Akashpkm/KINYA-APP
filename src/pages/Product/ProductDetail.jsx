@@ -42,16 +42,23 @@ const productDetails = {
     brochure: '/BROCHURES/brochure.pdf',
     description: 'Advanced ophthalmic surgical system designed for precision vitreoretinal procedures with cutting-edge technology.',
     features: [
-      'Advanced cutting technology for precise vitreous removal',
-      'Integrated fluid management system',
-      'Ergonomic design for surgeon comfort',
-      'Compatible with various surgical approaches',
-      'High-resolution visualization system'
+      'Advanced Cutting Technology ,Supports DORC / MIDLAB / DUAL PNEUMATIC Cutters',
+      'Venturi Pump with 2 Suction Lines for Extrusion and Cutter Aspiration',
+      '50,000 HRS LED Life and Enables with 23G / 25G / 27G Surgeries',
+      'Automated Infusion Control with Infusion Compansation Algorithm',
+      '23G Phaco Fragmantation',
+      'Multi Functional Foot Pedal'
     ],
     specifications: [
-      { name: 'Cutting Speed', value: 'Up to 10,000 cpm' },
-      { name: 'Illumination', value: 'Xenon LED' },
-      { name: 'Footprint', value: 'Compact mobile cart' }
+      { name: 'Cutting Speed', value: ' 10,000 CPM / 20,000 CPM on Twin Blade Cutter' },
+      { name: 'Illumination', value: '80W LED Light Source' },
+      { name: 'Vacuum', value: '0 to 650mmHg Using Venturi Pump' },
+      { name: 'Infusion', value: 'Automated 0 to 300mmHg' },
+      { name: 'Diathermy', value: '1 MHZ ' },
+      { name: 'Phaco', value: '40 KHZ ,4 Crystal Titanium Hand piece' },
+      { name: 'Silicone oil Injection', value: '0 to 6.5 bar' },
+      { name: 'Silicone oil Extraction', value: '0 to 650mmHg' },
+      { name: 'GUI Display', value: '15 inches Touch Screen' }
     ],
     accessories: [
        { image: '/POST/cassette POSTERIER.png', name: 'Cassette' },
@@ -74,16 +81,20 @@ const productDetails = {
     brochure: '/BROCHURES/PHACO.pdf',
     description: 'Advanced ophthalmic surgical system designed for precision vitreoretinal procedures with cutting-edge technology.',
     features: [
-      'Advanced cutting technology for precise vitreous removal',
-      'Integrated fluid management system',
+      'Advanced Fluidics System',
+      'Effective Cutting in all grades of Catract',
       'Ergonomic design for surgeon comfort',
-      'Compatible with various surgical approaches',
-      'High-resolution visualization system'
+      'Compatible with 2.8mm and MICS Procedure',
+      'Multi Functional Foot Pedal'
     ],
     specifications: [
-      { name: 'Cutting Speed', value: 'Up to 10,000 cpm' },
-      { name: 'Illumination', value: 'Xenon LED' },
-      { name: 'Footprint', value: 'Compact mobile cart' }
+        { name: 'Phaco', value: '40 KHZ ,4 Crystal Titanium Hand Piece' },
+          { name: 'Phaco Modes', value: 'Continuos / Pulse / Burst / Smart Pulse' },
+          { name: 'Irrigation ', value: 'Automated and Gravity' },
+      { name: 'Pump System', value: 'In built vacuum pump ' },
+        { name: 'Vitrectomy', value: '2,500 CPM' },
+      { name: 'Display', value: '15 inches Touch Screen' },
+     
     ],
     accessories: [
       { image: '/PHACO/cassette-phaco.png', name: 'Cassette' },
@@ -92,7 +103,7 @@ const productDetails = {
       { image: '/PHACO/diathermy forcep.png', name: 'Diathermy  Forcep' },
       { image: '/PHACO/ia tube.png', name: 'IA Tube ' },
       { image: '/PHACO/MITLAB ADAPTER.png', name: 'Mitlab Adapter' },
-       { image: '/PHACO/phaco frag.png', name: 'Phaco Frag ' },
+       { image: '/PHACO/phaco frag.png', name: 'Phaco Tip ' },
         { image: '/PHACO/phaco tray.png', name: 'Phaco Tray' },
       { image: '/PHACO/VGPC.png', name: 'VGPC' },
        { image: '/PHACO/CUTTER.png', name: 'Vitrectomy Cutter-DORC' },
@@ -105,15 +116,17 @@ const productDetails = {
     description: 'Advanced ophthalmic surgical system designed for precision vitreoretinal procedures with cutting-edge technology.',
     features: [
       'Advanced cutting technology for precise vitreous removal',
-      'Integrated fluid management system',
       'Ergonomic design for surgeon comfort',
-      'Compatible with various surgical approaches',
-      'High-resolution visualization system'
+      'Compatible with various Vitrectomy Cutters',
+         'In Built Diathermy ',
+      
+
     ],
     specifications: [
-      { name: 'Cutting Speed', value: 'Up to 10,000 cpm' },
-      { name: 'Illumination', value: 'Xenon LED' },
-      { name: 'Footprint', value: 'Compact mobile cart' }
+      { name: 'Vitrectomy', value: ' 5,000 CPM' },
+      { name: 'Diathermy', value: '1 MHZ' },
+      { name: 'Vacuum', value: 'Venturi Pump 0 to 650mmHg ' },
+
     ],
     accessories: [
        { image: '/ANT/cassette-anterior.png', name: 'Cassette' },
@@ -128,6 +141,7 @@ const productDetails = {
        { image: '/ANT/CUTTER.png', name: 'Vitrectomy Cutter-DORC' },
         { image: '/ANT/VITRECTOMY CUTTER-MIDLAB.png', name: 'Vitrectomy Cutter-Mitlab' },
     ]
+    
   },
   'air-injection': {
     title: 'AIR_INJECTION VITRECTOMY SYSTEM',
