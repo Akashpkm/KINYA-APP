@@ -9,7 +9,7 @@ function Certification() {
       description: "Quality Management System for Medical Devices",
       issuer: "International Organization for Standardization",
       date: "2023",
-      image: "/CERTIFICATE/certificate 2.jpeg"
+      image: "./CERTIFICATE/certificate 2.jpeg"
     },
     {
       id: 2,
@@ -17,7 +17,7 @@ function Certification() {
       description: "Medical Device Directive 93/42/EEC",
       issuer: "European Commission",
       date: "2023",
-      image: "/CERTIFICATE/certificate 1.jpeg"
+      image: "./CERTIFICATE/certificate 1.jpeg"
     },
     {
       id: 3,
@@ -25,7 +25,7 @@ function Certification() {
       description: "Administration",
       issuer: "CDSCO(Central Drugs Standard Control Organization)",
       date: "2024",
-      image: "/CERTIFICATE/certificate 3.jpeg"
+      image: "./CERTIFICATE/certificate 3.jpeg"
     },
     {
       id: 4,
@@ -33,7 +33,7 @@ function Certification() {
       description: "Medical Device Regulation Compliance",
       issuer: "CDSCO(Central Drugs Standard Control Organization)",
       date: "2024",
-      image: "/CERTIFICATE/certificate 4.jpeg"
+      image: "./CERTIFICATE/certificate 4.jpeg"
     }
   ];
 

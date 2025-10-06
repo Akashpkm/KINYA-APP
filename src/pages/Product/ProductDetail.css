@@ -1182,12 +1182,12 @@ body.modal-open {
 .dark-theme .form-group select {
   background: rgba(0, 0, 0, 0.05);
   border-color: #4a5568;
-  color:#404449;
+  color:#dbe1e9;
 }
 
 .dark-theme .form-group input:focus,
 .dark-theme .form-group select:focus {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(1, 1, 1, 0.975);
   border-color: #764ba2;
   box-shadow: 0 0 0 4px rgba(118, 75, 162, 0.2);
 }

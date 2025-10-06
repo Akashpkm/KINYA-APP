@@ -83,7 +83,7 @@ const Products = () => {
         { 
           id: 'abp-scan', 
           name: 'A/B/P SCAN', 
-          image: '/images/ABP_SCAN.png', 
+          image: './images/ABP_SCAN.png', 
           description: 'Complete diagnostic system with A-scan, B-scan, and P-scan capabilities.',
           features: ['Multi-Function', 'High Resolution', 'User-Friendly']
         }
@@ -97,21 +97,21 @@ const Products = () => {
         { 
           id: 'autoclave', 
           name: 'AUTOCLAVE', 
-          image: '/images/AUTOCLAVE.png', 
+          image: './images/AUTOCLAVE.png', 
           description: 'High-pressure autoclave for thorough sterilization.',
           features: ['High Pressure', 'Fast Cycle', 'Safety Certified']
         },
         { 
           id: 'plasma', 
           name: 'PLASMA', 
-          image: '/images/PLASMA.png', 
+          image: './images/PLASMA.png', 
           description: 'Low-temperature plasma sterilization technology.',
           features: ['Low Temperature', 'Plasma Tech', 'Gentle Sterilization']
         },
         { 
           id: 'eto', 
           name: 'ETO STERILIZER', 
-          image: '/images/ETO.png', 
+          image: './images/ETO.png', 
           description: 'Ethylene oxide sterilization for sensitive equipment.',
           features: ['Gas Sterilization', 'Sensitive Materials', 'Thorough Penetration']
         }
