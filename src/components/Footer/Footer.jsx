@@ -101,9 +101,9 @@ function Footer() {
                 <i className="fas fa-map-marker-alt contact-icon"></i>
               </div>
               <span className="contact-text">
-                No 46 Ranga Rice Mill, Rani Anna Nagar,<br />
-                Somanathapuram, Guduvancheri,<br />
-                Tamil Nadu, India - 603202
+                No 46 Ranga Rice Mill Building, Big Street,  Big Street, Nandhivaram, Guduvancheri<br />
+               Tamil Nadu, India - 603202<br />
+                 
               </span>
             </div>
             <div className="contact-item clickable" onClick={handlePhoneClick}>

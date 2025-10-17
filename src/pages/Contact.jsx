@@ -87,6 +87,7 @@ function Contact() {
     const encodedAddress = encodeURIComponent(address);
     window.open(`https://www.google.com/maps/search/?api=1&query=${encodedAddress}`, '_blank');
   };
+  
 
   const makeCall = () => {
     window.open('tel:+919789041308');
