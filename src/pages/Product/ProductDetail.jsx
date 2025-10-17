@@ -30,8 +30,8 @@ const countries = [
 
 // Sales contact information
 const salesContact = {
-  phone: '+1-800-123-4567',
-  email: 'sales@company.com'
+  phone: '9789041308',
+  email: 'sales@kinya.in'
 };
 
 // Product details data
@@ -39,7 +39,7 @@ const productDetails = {
   'posterior': {
     title: 'POSTERIOR VITRECTOMY SYSTEM',
     image: './images/POSTERIOR.png',
-    brochure: '/BROCHURES/brochure.pdf',
+    brochure: './BROCHURES/VHOPE.pdf',
     description: 'Advanced ophthalmic surgical system designed for precision vitreoretinal procedures with cutting-edge technology.',
     features: [
       'Advanced Cutting Technology ,Supports DORC / MIDLAB / DUAL PNEUMATIC Cutters',
@@ -78,7 +78,7 @@ const productDetails = {
   'phaco': {
     title: 'PHACO VITRECTOMY SYSTEM',
     image: './images/PHACO1.png',
-    brochure: '/BROCHURES/PHACO.pdf',
+    brochure: './BROCHURES/PHACO.pdf',
     description: 'Advanced ophthalmic surgical system designed for precision vitreoretinal procedures with cutting-edge technology.',
     features: [
       'Advanced Fluidics System',
@@ -112,7 +112,7 @@ const productDetails = {
   'ant-vit': {
     title: 'ANT_VIT VITRECTOMY SYSTEM',
     image: './images/ANTERIOR.png',
-    brochure: '/brochures/posterior-brochure.pdf',
+    brochure: './BROCHURES/ANTERIOR.pdf',
     description: 'Advanced ophthalmic surgical system designed for precision vitreoretinal procedures with cutting-edge technology.',
     features: [
       'Advanced cutting technology for precise vitreous removal',
@@ -129,7 +129,7 @@ const productDetails = {
 
     ],
     accessories: [
-       { image: '.ANT/cassette-anterior.png', name: 'Cassette' },
+       { image: './ANT/cassette-anterior.png', name: 'Cassette' },
       { image: './ANT/diathermy eraser.png', name: 'Diathermy Eraser' },
       { image: './ANT/diaTHERMY PROBE.png', name: 'Diathermy Probe' },
       { image: './ANT/diathermy forcep.png', name: 'Diathermy  Forcep' },
@@ -146,7 +146,7 @@ const productDetails = {
   'air-injection': {
     title: 'AIR_INJECTION VITRECTOMY SYSTEM',
     image: './images/AIR-INJ.png',
-    brochure: '/brochures/posterior-brochure.pdf',
+    brochure: './BROCHURES/SILICON.pdf',
     description: 'Advanced ophthalmic surgical system designed for precision vitreoretinal procedures with cutting-edge technology.',
     features: [
       'Advanced cutting technology for precise vitreous removal',
@@ -161,17 +161,14 @@ const productDetails = {
       { name: 'Footprint', value: 'Compact mobile cart' }
     ],
     accessories: [
-      { image: './images/accessory1.png', name: 'Vitrectomy Probe' },
-      { image: './images/accessory2.png', name: 'Illumination Fiber' },
-      { image: './images/accessory3.png', name: 'Infusion Cannula' },
-      { image: './images/accessory4.png', name: 'Cutting Tips' },
-      { image: './images/accessory5.png', name: 'Fluid Management Set' }
+      { image: './AIR INJ/silicon oil injection extraction kit.png', name: 'Silicon Oil Injection Extraction Kit' },
+    
     ]
   },
   'light-source': {
     title: 'LIGHT SOURCE VITRECTOMY SYSTEM',
     image: './images/LIGHTSOURCE.png',
-    brochure: '/brochures/posterior-brochure.pdf',
+    brochure: './BROCHURES/LEDLIGHT.pdf',
     description: 'Advanced ophthalmic surgical system designed for precision vitreoretinal procedures with cutting-edge technology.',
     features: [
       'Advanced cutting technology for precise vitreous removal',
@@ -186,11 +183,9 @@ const productDetails = {
       { name: 'Footprint', value: 'Compact mobile cart' }
     ],
     accessories: [
-      { image: './images/accessory1.png', name: 'Vitrectomy Probe' },
-      { image: './images/accessory2.png', name: 'Illumination Fiber' },
-      { image: './images/accessory3.png', name: 'Infusion Cannula' },
-      { image: './images/accessory4.png', name: 'Cutting Tips' },
-      { image: './images/accessory5.png', name: 'Fluid Management Set' }
+      { image: './LIGHTSOURCE/ALCON.png', name: 'Alcon Light Pipe' },
+      { image: './POST/aktive light pipe.png', name: 'Aktive Light Pipe' },
+     
     ]
   },
   'abp-scan': {
@@ -200,7 +195,7 @@ const productDetails = {
       './images/B_SCAN.png',
       './images/P_SCAN.png'
     ],
-    brochure: '/brochures/abp-scan-brochure.pdf',
+    brochure: './BROCHURES/ABPSCAN.pdf',
     description: 'Comprehensive diagnostic ultrasound system for ophthalmic applications with A-scan, B-scan, and Pachymetry capabilities.',
     detailedDescription: 'The DIAGNOSTIC A/B/P SCAN SYSTEM is a state-of-the-art ophthalmic ultrasound diagnostic device that combines A-scan biometry, B-scan imaging, and Pachymetry in one compact unit.',
     features: [
@@ -221,17 +216,16 @@ const productDetails = {
       { name: 'Dimensions', value: '350mm × 280mm × 150mm' }
     ],
     accessories: [
-      { image: './images/abp-probe.png', name: 'A-Scan Biometry Probe' },
-      { image: './images/b-scan-probe.png', name: 'B-Scan Imaging Probe' },
-      { image: './images/pachymeter-probe.png', name: 'Pachymetry Probe' },
-      { image: './images/ultrasound-gel.png', name: 'Sterile Ultrasound Gel' },
-      { image: './images/carry-case.png', name: 'Protective Carry Case' }
+      { image: './ABP/ASCAN.png', name: 'A-Scan Biometry OA12-Probe' },
+      { image: './ABP/BSCAN.png', name: 'B-Scan Imaging OB12-Probe' },
+      { image: './ABP/PACH.png', name: 'Pachymetry OP20-Probe' },
+      { image: './ABP/case.png', name: 'Protective Carry Case' },
     ]
   },
   'autoclave': {
     title: 'AUTOCLAVE STERILIZER',
-    image: './images/AUTOCLAVE.jpg',
-    brochure: '/brochures/posterior-brochure.pdf',
+    image: './images/AUTOCLAVE.png',
+    brochure: './BROCHURES/AUTOCLAVE1.pdf',
     description: 'Advanced ophthalmic surgical system designed for precision vitreoretinal procedures with cutting-edge technology.',
     features: [
       'Advanced cutting technology for precise vitreous removal',
@@ -246,17 +240,17 @@ const productDetails = {
       { name: 'Footprint', value: 'Compact mobile cart' }
     ],
     accessories: [
-      { image: './images/accessory1.png', name: 'Vitrectomy Probe' },
-      { image: './images/accessory2.png', name: 'Illumination Fiber' },
-      { image: './images/accessory3.png', name: 'Infusion Cannula' },
-      { image: './images/accessory4.png', name: 'Cutting Tips' },
-      { image: './images/accessory5.png', name: 'Fluid Management Set' }
+      { image: './AUTOCLAVE/AUTOCLAVE HELIX-PCD TEST KIT.png', name: 'Autoclave HELIX-PCD Test Kit' },
+      { image: './AUTOCLAVE/AUTOCLAVE INDICATOR STRIP.png', name: 'Autoclave Indicator Strip' },
+      { image: './AUTOCLAVE/AUTOCLAVE INDICATOR TAPE.png', name: 'Autoclave Indicator Tape' },
+      { image: './AUTOCLAVE/AUTOCLAVE POUCH.png', name: 'Pouch' },
+
     ]
   },
   'plasma': {
     title: 'PLASMA STERILIZER',
     image: './images/PLASMA.png',
-    brochure: '/brochures/posterior-brochure.pdf',
+    brochure: './BROCHURES/PLASMA.pdf',
     description: 'Advanced ophthalmic surgical system designed for precision vitreoretinal procedures with cutting-edge technology.',
     features: [
       'Advanced cutting technology for precise vitreous removal',
@@ -271,17 +265,17 @@ const productDetails = {
       { name: 'Footprint', value: 'Compact mobile cart' }
     ],
     accessories: [
-      { image: '/images/accessory1.png', name: 'Vitrectomy Probe' },
-      { image: '/images/accessory2.png', name: 'Illumination Fiber' },
-      { image: '/images/accessory3.png', name: 'Infusion Cannula' },
-      { image: '/images/accessory4.png', name: 'Cutting Tips' },
-      { image: '/images/accessory5.png', name: 'Fluid Management Set' }
+      { image: './PLASMA/PLASMA BIOLOGICAL INDICATOR.png', name: 'Biological Indicator' },
+      { image: './PLASMA/PLASMA HELIX TEST KIT.png', name: 'Helix Test Kit' },
+      { image: './PLASMA/PLASMA INDICATOR STRIP CD 40.jpg', name: 'Indicator Strip CD 40' },
+      { image: './PLASMA/PLASMA INDICATOR TAPE.png', name: 'Indicator Tape' },
+      { image: './PLASMA/TIVEK ROLL.png', name: 'Tivek Roll' }
     ]
   },
   'eto': {
     title: 'ETO STERILIZER',
     image: './images/ETO.png',
-    brochure: '/brochures/posterior-brochure.pdf',
+    brochure: './BROCHURES/ETO.pdf',
     description: 'Advanced ophthalmic surgical system designed for precision vitreoretinal procedures with cutting-edge technology.',
     features: [
       'Advanced cutting technology for precise vitreous removal',
@@ -296,11 +290,10 @@ const productDetails = {
       { name: 'Footprint', value: 'Compact mobile cart' }
     ],
     accessories: [
-      { image: '/images/accessory1.png', name: 'Vitrectomy Probe' },
-      { image: '/images/accessory2.png', name: 'Illumination Fiber' },
-      { image: '/images/accessory3.png', name: 'Infusion Cannula' },
-      { image: '/images/accessory4.png', name: 'Cutting Tips' },
-      { image: '/images/accessory5.png', name: 'Fluid Management Set' }
+      { image: './ETO/ETO BIOLOGICAL INDICATOR.png', name: 'Biological Indicator' },
+      { image: './ETO/ETO HELIX-PCD TEST KIT.png', name: 'HELIX-PCD Test Kit ' },
+      { image: './ETO/ETO INDICATOR DOT.png', name: 'Indicator Dot' },
+      { image: './ETO/ETO POUCH.png', name: 'Pouch' },
     ]
   },
 };
@@ -389,9 +382,9 @@ const ProductDetail = () => {
     setIsSubmitting(true);
     setSubmitStatus('');
 
-    const serviceID = 'service_0rbn652';
-    const templateID = 'template_pevdd19';
-    const userID = 'ZHFWFh5cJQcspTTnY';
+    const serviceID = 'service_k9zgeyx';
+    const templateID = 'template_j2jm87v';
+    const userID = 'Fq6cAmOPDVoQzsnx5';
 
     const templateParams = {
       doctor_name: formData.doctorName,
@@ -431,7 +424,7 @@ const ProductDetail = () => {
         setIsSubmitting(false);
       });
   }, [formData, product.title]);
-
+//Contact Sales
   const handleContactSales = () => {
     window.location.href = `tel:${salesContact.phone}`;
   };
@@ -579,12 +572,12 @@ const ProductDetail = () => {
                   onClick={handleContactSales}
                 >
                   <i className="fas fa-phone"></i>
-                  Contact Sales
+                  Enquiry Now
                 </button>
               </div>
-              <div className="contact-info">
-                <p>Or call us directly: <strong>{salesContact.phone}</strong></p>
-                <p>Email: <strong>{salesContact.email}</strong></p>
+              <div className="c contact-info">
+                <p>Call Us : <strong>{salesContact.phone}</strong></p>
+                <p>Email : <strong>{salesContact.email}</strong></p>
               </div>
             </div>
           </div>

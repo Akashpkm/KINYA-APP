@@ -106,7 +106,6 @@ body.dark .about-page {
 
 .mission-image img {
   width: 2200px;
-  height: 400px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: var(--shadow);
@@ -652,7 +651,9 @@ body.dark .about-page {
   .team-grid {
     grid-template-columns: 1fr;
   }
-  
+ .team-image{
+  height: 500px;
+ }
   .mission,
   .values,
   .offices,

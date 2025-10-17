@@ -35,7 +35,7 @@ const Products = () => {
   const productCategories = [
     {
       id: 'vitrectomy',
-      title: 'POSTERIOR VITRECTOMY AND PHACO EMULSIFICATION',
+      title: 'VITRECTOMY&PHACO ',
       icon: '🔬',
       products: [
         { 

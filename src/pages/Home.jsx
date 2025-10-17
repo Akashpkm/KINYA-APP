@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Home.css';
 import backgroundVideo from "./images/vi.mp4";
 
@@ -7,6 +8,15 @@ function Home() {
   const testimonialsRef = useRef(null);
   const testimonialsTrackRef = useRef(null);
   const [theme, setTheme] = useState('light');
+
+  
+const navigate = useNavigate();
+
+  const handleNavigation = (path) => {
+    navigate(path);
+    window.scrollTo(0, 0);
+  };
+
 
   // Auto-scroll to top on refresh
   useEffect(() => {
@@ -36,7 +46,7 @@ function Home() {
       role: 'VR SURGEON',
       hospital: ' Athreya Eye Hospital, Trichy',
       text: 'I ve been part of the HOPE Vitrectomy journey since its inception and performing its debut surgery It s exhilarating to see its remarkable progress. My recent experience with the 25G ALCON cutter was truly impressive, during a combined procedure involving phaco and TRD surgery. What stood out to me was the cutters exceptional precision and the seamless fluid management, which made the entire process incredibly smooth.',
-      avatar: './DOCTOR/Sriram Gopal.png',
+      avatar: './DOCTOR/Sriram.png',
       rating: 5
     },
     {
@@ -184,13 +194,13 @@ function Home() {
                 to Hospitals across India and Overseas with Excellence and Reliability.
               </p>
               <div className="hero-buttons">
-                <a href="/products" className="btn btn-primary">
+                <a onClick={() => handleNavigation('/products')}  className="btn btn-primary">
                   <span>Explore Products</span>
-                  <i className="fas fa-arrow-right"></i>
+                  <i className="k fas fa-arrow-right"></i>
                 </a>
                 <a href="tel:+91 80568 05837" className="btn btn-secondary">
                   <span>Call Now</span>
-                  <i className="fas fa-phone"></i>
+                  <i className="k fas fa-phone"></i>
                 </a>
               </div>
               <div className="hero-stats">
@@ -230,37 +240,37 @@ function Home() {
               {
                 icon: 'fas fa-award',
                 title: 'Quality Certified',
-                description: 'All products meet international quality standards with proper certifications and compliance.',
+                description: 'All Products meet International Quality Standards with Proper Certifications and Compliance.',
                 color: '#4CAF50'
               },
               {
                 icon: 'fas fa-truck-fast',
-                title: 'Nationwide Delivery',
-                description: 'Efficient logistics network ensuring timely delivery across all regions in Kenya.',
+                title: 'Nationwide Coverage',
+                description: 'Efficient Distributor Partner Network Ensuring Timely Delivery and Support all regions across India.',
                 color: '#2196F3'
               },
               {
                 icon: 'fas fa-user-md',
                 title: 'Expert Support',
-                description: 'Certified medical professionals providing technical support and comprehensive training.',
+                description: 'Certified Medical Professionals Providing Technical Support and Comprehensive Training.',
                 color: '#FF9800'
               },
               {
                 icon: 'fas fa-headset',
                 title: '24/7 Service',
-                description: 'Round-the-clock customer support for emergencies and urgent equipment needs.',
+                description: 'Round-the-clock customer Support for Emergencies and Urgent Equipment Needs.',
                 color: '#9C27B0'
               },
               {
                 icon: 'fas fa-shield-heart',
                 title: 'Patient Safety',
-                description: 'Equipment designed with patient safety and healthcare efficiency as top priorities.',
+                description: 'Equipment designed with Predictablity and Patient Safety as top Priorities.',
                 color: '#E91E63'
               },
               {
                 icon: 'fas fa-handshake',
                 title: 'Partnership',
-                description: 'Long-term partnerships with healthcare facilities for continuous improvement.',
+                description: 'Long-term partnerships with Surgeons for continuous improvement.',
                 color: '#673AB7'
               },
             ].map((feature, index) => (
@@ -348,13 +358,13 @@ function Home() {
             <h2>Ready to Enhance Your Healthcare Services?</h2>
             <p>Contact us today for a personalized consultation and discover how our solutions can transform your medical practice.</p>
             <div className="cta-buttons">
-              <a href="tel:+254700000000" className="btn btn-light">
+              <a href="tel:80568058370" className="btn btn-light">
                 <span>Call Now</span>
-                <i className="fas fa-phone"></i>
+                <i className="k fas fa-phone"></i>
               </a>
-              <a href="/Contact" className="btn btn-outline-light">
+              <a onClick={() => handleNavigation('/contact')} className="btn btn-outline-light">
                 <span>Contact Us</span>
-                <i className="fas fa-envelope"></i>
+                <i className="k fas fa-envelope"></i>
               </a>
             </div>
           </div>

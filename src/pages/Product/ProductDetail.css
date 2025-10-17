@@ -937,6 +937,9 @@ body.modal-open {
   position: relative;
   z-index: 2;
 }
+.c{
+   align-items: center;
+}
 
 .contact-info p {
   font-size: 1.2rem;
@@ -1385,6 +1388,10 @@ body.modal-open {
   .product-visual-section {
     order: 1;
   }
+  .accessories-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
   
   .product-info-sidebar {
     order: 2;
@@ -1407,6 +1414,10 @@ body.modal-open {
   
   .demo-modal-content {
     padding: 2rem; /* Reduced from 2.5rem */
+  }
+  .accessories-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
   }
   
   .form-row {
@@ -1432,7 +1443,7 @@ body.modal-open {
   }
   
   .accessories-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
   }
   

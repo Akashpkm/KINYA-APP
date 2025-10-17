@@ -46,10 +46,10 @@ function Contact() {
       };
 
       await emailjs.send(
-        'service_0rbn652',
-        'template_xifs1y6',
+        'service_k9zgeyx',
+        'template_94fgcvh',
         templateParams,
-        'ZHFWFh5cJQcspTTnY'
+        'Fq6cAmOPDVoQzsnx5'
       );
 
       setFormStatus({ 
@@ -83,7 +83,7 @@ function Contact() {
 
   // Contact actions
   const openLocation = () => {
-    const address = "No 46 Ranga Rice Mill, Rani Anna Nagar, Somanathapuram, Guduvancheri, Tamil Nadu, India";
+    const address = "No 46 Ranga Rice Mill Building, Big Street, Nandhivaram, Guduvancheri, Tamil Nadu, India";
     const encodedAddress = encodeURIComponent(address);
     window.open(`https://www.google.com/maps/search/?api=1&query=${encodedAddress}`, '_blank');
   };
@@ -168,7 +168,7 @@ function Contact() {
               <ContactCard 
                 icon="fas fa-map-marker-alt"
                 title="Visit Our Location"
-                details={["No 46 Ranga Rice Mill, Rani Anna Nagar", "Somanathapuram, Guduvancheri", "Tamil Nadu, India"]}
+                details={["No 46 Ranga Rice Mill Building, Big Street", "Nandhivaram, Guduvancheri", "Tamil Nadu, India"]}
                 onClick={openLocation}
                 actionIcon="fas fa-external-link-alt"
                 actionText="Open in Maps"

@@ -25,11 +25,11 @@ function Footer() {
         <div className="footer-section">
           <div className="company-info">
             <div className="footer-brand">
-              <h3 className="footer-logo">Kinya Medical</h3>
-              <div className="footer-badge">Trusted Since 2009</div>
+              <h3 className="footer-logo">Kinya Medical Systems</h3>
+              <div className="footer-badge">Trusted Since 2015</div>
             </div>
             <p className="company-description">
-              Providing quality healthcare solutions for over 15 years. Trusted by medical professionals nationwide with cutting-edge medical equipment and exceptional service.
+              Providing quality healthcare solutions for over 10 years. Trusted by medical professionals nationwide with cutting-edge medical equipment and exceptional service.
             </p>
             <div className="social-icons">
               <a 
@@ -42,13 +42,13 @@ function Footer() {
                 <i className="fab fa-facebook-f"></i>
               </a>
               <a 
-                href="#" 
-                aria-label="Twitter" 
+                href="https://youtube.com/@kinyamedicals7828?si=KAHt47NJlJ7dyUQJ" 
+                aria-label="Youtube" 
                 className="social-icon"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-twitter"></i>
+                <i className="fab fa-brands fa-youtube"></i>
               </a>
               <a 
                 href="https://www.instagram.com/kinyamedicalsystems/" 

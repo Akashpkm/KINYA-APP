@@ -127,9 +127,9 @@ const DemoModal = ({
                   required
                 >
                   <option value="Demonstration">Demonstration</option>
-                  <option value="Detailed Information">Detailed Information</option>
+                  <option value="Detailed Information">Request Details</option>
                   <option value="Quotation">Quotation</option>
-                  <option value="Technical Support">Technical Support</option>
+                  <option value="Technical Support">Enquiry</option>
                 </select>
               </div>
               

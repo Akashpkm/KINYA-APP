@@ -5,46 +5,50 @@ import img from '/ABOUT/GROUP.jpeg'
 
 function About() {
   const teamMembers = [
-  {
-    id: 1,
-    name: 'Dr. James Kariuki',
-    role: 'Medical Director',
-    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
-    bio: '15+ years of experience in medical equipment procurement and healthcare management.',
-    email: 'james.kariuki@kinyamedical.com',
-    linkedin: 'https://linkedin.com/in/jameskariuki',
-    twitter: 'https://twitter.com/jameskariuki'
+  
+   {
+     id: 1,
+    name: 'Tibertius Kiran Kumar',
+    role: 'Director - Sales & Finance',
+    image: './ABOUT/SI.png',
+    bio: '',
+    
+    
+    },
+     {
+     id: 2,
+    name: 'Nisha Seeriack',
+    role: 'Director - Operation',
+    image: './ABOUT/MAM.jpeg',
+    bio: '',
+   
+    
+    },
+      {
+    id: 3,
+    name: 'MarudhuPandian',
+    role: 'Lead - Production and Service',
+    image: './ABOUT/MARUDHU.png',
+    bio: '',
+  
   },
     {
-      id: 2,
-    name: 'Dr. James Kariuki',
-    role: 'Medical Director',
-    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
-    bio: '15+ years of experience in medical equipment procurement and healthcare management.',
-    email: 'james.kariuki@kinyamedical.com',
-    linkedin: 'https://linkedin.com/in/jameskariuki',
-    twitter: 'https://twitter.com/jameskariuki'
+      id: 4,
+    name: 'Surendhar Kasinathan',
+    role: 'Lead - Product Development and Application',
+    image: ' ./ABOUT/SS.png',
+    bio: '',
+    
     },
     {
-      id: 3,
-    name: 'Dr. James Kariuki',
-    role: 'Medical Director',
-    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
-    bio: '15+ years of experience in medical equipment procurement and healthcare management.',
-    email: 'james.kariuki@kinyamedical.com',
-    linkedin: 'https://linkedin.com/in/jameskariuki',
-    twitter: 'https://twitter.com/jameskariuki'
+      id: 5,
+    name: 'Mohammed Syed Jaffer',
+    role: 'Lead - Research,Development and Innovation',
+    image: './ABOUT/J.png',
+    bio: '',
     },
-    {
-     id: 4,
-    name: 'Dr. James Kariuki',
-    role: 'Medical Director',
-    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
-    bio: '15+ years of experience in medical equipment procurement and healthcare management.',
-    email: 'james.kariuki@kinyamedical.com',
-    linkedin: 'https://linkedin.com/in/jameskariuki',
-    twitter: 'https://twitter.com/jameskariuki'
-    }
+   
+    
   ];
 
   const sectionRefs = useRef([]);
@@ -80,7 +84,7 @@ function About() {
       <section className="about-hero" ref={addToRefs}>
         <div className="container">
           <h1 className="slide-up">About Kinya Medical Systems</h1>
-          <p className="slide-up delay-1">Your trusted partner in healthcare solutions for over 15 years</p>
+          <p className="slide-up delay-1">Your trusted partner in healthcare solutions for over 10 years</p>
         </div>
       </section>
 
@@ -90,8 +94,10 @@ function About() {
           <div className="mission-content">
             <div className="mission-text fade-in-left">
               <h2>Our Mission</h2>
-              <p>At Kinya Medical, our mission is to Enhance Healthcare Delivery across Kinya by providing High-quality Medical Equipment and Support Services to Healthcare facilities of all sizes.</p>
-              <p>We believe that every Kinya deserves access to Reliable Medical Care, and we work tirelessly to ensure that Healthcare Providers have the Tools and Resources they need to Deliver Exceptional Patient Care.</p>
+              <p>Kinya Medical Systems is committed to Develop and Manufacture Advanced Vitrectomy and Phaco Emulsification systems that deliver simple, cost-effective solutions for complex surgical challenges. 
+We partner closely with surgeons to drive innovation, prioritize continuous improvement, and respond swiftly to customer needs and concerns.
+ Our goal is to become the global leader in ophthalmic devices, known for quality, affordability, and reliability.</p>
+              <p>We strive to build a workplace where the brightest engineers are inspired to innovate, fostering a culture of creativity, collaboration, and excellence that propels us toward a future where advanced eye care is within everyone’s reach.</p>
             </div>
             <div className="mission-image fade-in-right">
               <img src={img} alt="Medical team" />
@@ -132,9 +138,9 @@ function About() {
               { 
                 title: 'OFFICE & MANUFACTURING', 
                 address: 'No 46 Ranga Rice Mill, Rani Anna Nagar, Somanathapuram, Guduvancheri, Tamil Nadu, India',
-                contact: 'Mr Tibertius Kiran Kumar Fernando',
-                phone: '+91 8056805837',
-                alternatePhone: ' +91 9789041308',
+                contact: 'Mrs Nisha Kiran',
+                phone: '+91 9789041308',
+                alternatePhone: ' +91 8056805718',
                 email: 'sales@kinya.in'
               },
               { 
@@ -148,27 +154,20 @@ function About() {
               { 
                 title: 'BANGALORE OFFICE', 
                 address: 'SRI KANI #724, SRI KANISHKA,11TH BLOCK, BSK 6TH STAGE,BDA LAYOUT, BEHIND ARVIND TATA MOTORS,KENGERI POST,BENGALURU - 560060.KARNATAKA',
-                contact: 'Mr Ashokana',
+                contact: 'Mr Ashokan',
                 phone: '+91 9880264118',
                 alternatePhone: '+91 7795255782',
                 email: ' ashokana81@gmail.com'
               },
               { 
                 title: 'MUMBAI OFFICE', 
-                address: 'Kim, Mumbai, India',
-                contact: 'Mr. Saravanan',
-                phone: '63232323232',
-                alternatePhone: '+91 63232 323233',
-                email: 'mohapatra@kinyamedical.com'
+                address: 'Mumbai, India',
+                contact: 'Mr. Sakthivel',
+                phone: '+91 9500617481',
+                alternatePhone: '+91 8675244091',
+                email: 'sales@kinya.in'
               },
-               { 
-                title: 'HYDERABAD OFFICE', 
-                address: 'Plot No:46, Ganesh Nagar, West Marredpally, Secunderabad-500026',
-                contact: 'Mr. Srinivas Rao',
-                phone: '+91 9505018225',
-                alternatePhone: '040-35849129',
-                email: 'mohapatra@kinyamedical.com'
-              }
+               
             ].map((office, index) => (
               <div key={index} className="office-card slide-up" style={{ animationDelay: `${index * 0.1}s` }}>
                 <h3>{office.title}</h3>
@@ -195,14 +194,7 @@ function About() {
               <div key={member.id} className="team-card fade-in" style={{ animationDelay: `${index * 0.15}s` }}>
                 <div className="team-image">
                   <img src={member.image} alt={member.name} />
-                  <div className="team-overlay">
-                    <div className="social-links">
-                      <a href="#"><i className="fab fa-linkedin-in"></i></a>
-                      <a href="#"><i className="fab fa-twitter"></i></a>
-                      <a href="#"><i className="fas fa-envelope"></i></a>
-                    </div>
-                  </div>
-                </div>
+                 </div>
                 <div className="team-info">
                   <h3>{member.name}</h3>
                   <p className="role">{member.role}</p>

@@ -1,6 +1,10 @@
 // src/pages/Video.jsx
 import React, { useState, useEffect } from 'react';
 import './Video.css';
+import V1 from '/THUMB/MACHINE.mp4';
+import V2 from '/THUMB/HOPE.mp4';
+import V3 from '/THUMB/TESTO.mp4';
+
 
 function Video() {
   const [currentTheme, setCurrentTheme] = useState('light');
@@ -10,67 +14,87 @@ function Video() {
   const videoItems = [
     {
       id: 1,
-      title: 'Surgery on HOPE using 25G Dual Port Vitrectomy Cutter',
-      description: 'Experience a detailed surgical demonstration of a vitrectomy procedure using the advanced 25G Dual Port Vitrectomy Cutter on the HOPE system. This video showcases the precision, control, and efficiency of modern microincision vitrectomy surgery, highlighting the advantages of dual-port technology in improving visualization, fluidics, and surgical outcomes.',
-      thumbnail: './THUMB/THUMB1.png',
-      duration: '11:08',
-      videoUrl: 'https://www.youtube.com/embed/0WHkJ60rDFc?si=-2FSOIytWbToq1JU',
-      youtubeId: '0WHkJ60rDFc',
-      type: 'youtube'
+      title: 'Hope 10000 and its Features',
+      description: 'Advanced Cutting Technology Supports DORC / MIDLAB / DUAL PNEUMATIC Cutters,Venturi Pump with 2 Suction Lines for Extrusion and Cutter Aspiration,50,000 HRS LED Life and Enables with 23G / 25G / 27G Surgeries,Automated Infusion Control with Infusion Compansation Algorithm,23G Phaco Fragmantation,Multi Functional Foot Pedal',
+      thumbnail: './THUMB/THUMBM.png',
+      duration: '1:12',
+      videoUrl: V1,
+      youtubeId: '',
+      type: 'local'
     },
     {
       id: 2,
+      title: 'Dr.Srinivas Joshi - Table Top TRD on HOPE 10000 Vitrectomy using 25G DORC cutter',
+      description: 'Dr. Srinivas Joshi performs a Table Top Tractional Retinal Detachment (TRD) procedure using the advanced HOPE 10000 vitrectomy system and a 25G DORC cutter. This detailed walkthrough showcases the precision, control, and efficiency of modern vitreoretinal surgery techniques.',
+      thumbnail: './THUMB/THUMB1.png',
+      duration: '15.07',
+      videoUrl: 'https://drive.google.com/file/d/16XxJxnxzkxxLo9F_CBtZ545XrvWY8DoO/preview',
+      youtubeId: '',
+      type: 'drive'
+    },
+    {
+      id: 3,
       title: 'TRD Surgery on HOPE Vitrectomy system by Dr. Sriramgopal',
-      description: 'Join Dr. Sriramgopal as he performs a Tractional Retinal Detachment (TRD) surgery using the advanced HOPE Vitrectomy System. This video demonstrates key surgical techniques, precision handling, and the superior performance of the HOPE system in managing complex retinal conditions. ',
+      description: 'Dr. Sriramgopal as he performs a Tractional Retinal Detachment (TRD) surgery using the advanced HOPE Vitrectomy System. This video demonstrates key surgical techniques, precision handling, and the superior performance of the HOPE system in managing complex retinal conditions. ',
       thumbnail: './THUMB/TUMB2.png',
-      duration: '11:14',
+      duration: '11:13',
       videoUrl: 'https://www.youtube.com/embed/FaBGlpKs5E0?si=DwGyz8N8_elEaA8F',
       youtubeId: 'FaBGlpKs5E0',
       type: 'youtube'
     },
     {
-      id: 3,
-      title: 'Customer Testimonial: Nairobi Hospital',
-      description: 'Hear from our partners at Nairobi Hospital about their experience with our products',
-      thumbnail: 'https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80',
+      id: 4,
+      title: 'Customer Testimonial ',
+      description: 'Hear from our customers using HOPE Posterier Vitrectomy System.',
+      thumbnail: './THUMB/THUMB7.png',
       duration: '3:15',
-      videoUrl: 'https://www.facebook.com/share/v/1EBbCAdo5m/',
-      youtubeId: 'XIMLoLxmTDw',
-      type: 'youtube'
+      videoUrl: V3,
+      youtubeId: '',
+      type: 'local'
     },
     {
-      id: 4,
-      title: 'Dr.Ruchir - Diabetic surgery using Constellation Cutter on HOPE vitrectomy',
-      description: 'Watch Dr. Ruchir perform a diabetic vitrectomy surgery using the Constellation Cutter on the HOPE Vitrectomy System. This video highlights the precision, stability, and advanced control offered by the HOPE platform in managing diabetic retinal complications. A valuable educational resource for ophthalmic surgeons and medical professionals focusing on modern vitreoretinal surgical innovations.',
-      thumbnail: './THUMB/THUMB3.png',
-      duration: '11:14',
-      videoUrl: 'https://drive.google.com/file/d/1OYJfpZIpEhJs9iHN6n3cLq-UHn9btEVZ/preview',
-      youtubeId: '',
-      type: 'drive'
+      id: 5,
+      title: 'Dr.Ruchir Tiwari- Diabetic surgery using Constellation Cutter on HOPE vitrectomy',
+      description: 'Dr. Ruchir Tiwari perform a diabetic vitrectomy surgery using the Constellation Cutter on the HOPE Vitrectomy System. This video highlights the precision, stability, and advanced control offered by the HOPE platform in managing diabetic retinal complications.',
+      thumbnail: './THUMB/THUMB6.png',
+      duration: '11:09',
+      videoUrl: 'https://www.youtube.com/embed/0WHkJ60rDFc?si=-2FSOIytWbToq1JU',
+      youtubeId: '0WHkJ60rDFc',
+      type: 'youtube'
     },
   
     
     {
-      id: 5,
-      title: 'Managieng an Aphakic Retinal Detachment with Pars Plana Vitrectomy (PPV + EL + SOI).',
-      description: 'This surgical video demonstrates the management of an aphakic retinal detachment using Pars Plana Vitrectomy (PPV) combined with Endolaser (EL) and Silicone Oil Injection (SOI). The procedure showcases precise surgical techniques, effective retinal stabilization, and postoperative management strategies. An excellent educational resource for ophthalmic surgeons and trainees.',
+      id: 6,
+      title: 'Dr.Siddarth Sane,Managing an Aphakic Retinal Detachment with Pars Plana Vitrectomy (PPV + EL + SOI).',
+      description: 'This surgical video demonstrates the management of an aphakic retinal detachment using Pars Plana Vitrectomy (PPV) combined with Endolaser (EL) and Silicone Oil Injection (SOI). ',
       thumbnail: './THUMB/THUMB4.png',
       duration: '9:32',
       videoUrl: 'https://www.youtube.com/embed/xpXXRgzLYxc?si=AH6LTCA04kFEiTx6', // Google Drive video
       youtubeId: 'AH6LTCA04kFEiTx6',
       type: 'drive'
+    },
+    {
+      id: 7,
+      title: 'Managing Hard catract using HOPE system',
+      description: 'To Managing Hard Cataract cases using the HOPE (High Output Phacoemulsification Efficiency) system. Hard cataracts can pose significant surgical challenges, and the HOPE system offers a reliable and efficient solution for safe lens fragmentation and removal. ',
+      thumbnail: './THUMB/THUMB5.png',
+      duration: '1:51',
+      videoUrl: V2, // Google Drive video
+      youtubeId: '',
+      type: 'local'
     }
   ];
 
   const featuredVideo = {
     id: 0,
     title: 'Introduction to Kinya Medical',
-    description: 'Learn about our company mission, values, and the range of products and services we offer to healthcare providers across Kenya.',
-    thumbnail: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    description: 'Learn about our company mission, values, and the range of products and services that we offer.',
+    thumbnail: './THUMB/LOGO.png',
     duration: '10:35',
-    videoUrl: '/videos/company-intro.mp4', // Local video
-    youtubeId: '',
-    type: 'local'
+    videoUrl: 'https://youtube.com/shorts/CmIO4lfsKds?si=7k6o0uHab3ngzhkI', // Local video
+    youtubeId: 'CmIO4lfsKds',
+    type: 'youtube'
   };
 
   // Detect theme changes from navbar
@@ -173,18 +197,15 @@ function Video() {
       return (
         <div className="video-player-container">
           <div className="video-wrapper">
-            <video
-              controls
-              autoPlay
-              style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'contain'
-              }}
-            >
-              <source src={video.videoUrl} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <iframe
+             width="100%"
+              height="100%"
+            src={video.videoUrl} 
+            type="video/mp4"
+              frameBorder="0"
+              allow="autoplay"
+              allowFullScreen>
+               </iframe>
           </div>
         </div>
       );
@@ -283,7 +304,7 @@ function Video() {
         <div className="video-modal">
           <div className="modal-overlay" onClick={closeVideoModal}></div>
           <div className="modal-content">
-            <div className="modal-header">
+            <div className="modal-header1">
               <h3>{playingVideo.title}</h3>
               <button 
                 className="close-btn" 

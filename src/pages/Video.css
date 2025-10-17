@@ -7,6 +7,7 @@
   animation: pageEntrance 0.8s ease-out forwards;
 }
 
+
 @keyframes pageEntrance {
   0% {
     opacity: 0;
@@ -223,7 +224,8 @@ body.dark .video-page .featured-video {
 
 .video-placeholder img {
   width: 100%;
-  height: 100%;
+  height: 50%;
+  margin-top: 15%;
   object-fit: cover;
   transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
@@ -654,7 +656,7 @@ body.dark .video-page .modal-content {
   background: #1a1a1a;
 }
 
-.modal-header {
+.modal-header1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -666,11 +668,11 @@ body.dark .video-page .modal-content {
   z-index: 10000;
 }
 
-body.dark .video-page .modal-header {
+body.dark .video-page .modal-header1 {
   border-bottom-color: #333;
 }
 
-.modal-header h3 {
+.modal-header1 h3 {
   margin: 0;
   color: #ffffff;
   font-size: 1.3rem;
