@@ -81,7 +81,7 @@
 /* Enhanced Header Section */
 .contact-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   opacity: 0;
   transform: translateY(40px);
   animation: slideUpFade 0.8s var(--ease-out-quad) 0.2s forwards;
@@ -122,7 +122,8 @@
 .contact-header h1 {
   font-size: 3.5rem;
   color: var(--text-primary);
-  margin-bottom: 1rem;
+  margin-bottom: -2px;
+  margin-top: -2rem;
   font-weight: 700;
   background: linear-gradient(135deg, var(--primary-color), #60a5fa);
   -webkit-background-clip: text;
@@ -165,7 +166,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  margin-bottom: 5rem;
+  margin-bottom: -40px;
   opacity: 0;
   animation: fadeIn 0.8s var(--ease-out-quad) 0.8s forwards;
 }

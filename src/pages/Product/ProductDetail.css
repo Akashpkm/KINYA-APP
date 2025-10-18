@@ -232,11 +232,11 @@ body.modal-open {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 3rem 0;
+  margin-top: 1rem ;
   flex-wrap: wrap;
   gap: 2rem;
   background: rgba(255, 255, 255, 0.95);
-  padding: 2rem;
+  padding: 1.2rem;
   border-radius: 20px;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -279,7 +279,7 @@ body.modal-open {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   border: none;
@@ -325,14 +325,37 @@ body.modal-open {
 }
 
 /* Product Description */
-.product-description {
-  margin: 2rem 0;
+.product-description1 {
+  margin: -30px 0;
   font-size: 1.2rem;
   line-height: 1.8;
   color: #4a5568;
   opacity: 0;
   background: rgba(255, 255, 255, 0.9);
-  padding: 2rem;
+  padding: 1rem;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  border-left: 4px solid #667eea;
+}
+
+.product-description1.fade-in-up {
+  opacity: 1;
+}
+
+.dark-theme .product-description1 {
+  background: rgba(45, 55, 72, 0.9);
+  color: #e2e8f0;
+  border-left: 4px solid #764ba2;
+}
+/*for Product*/ 
+.product-description{
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #4a5568;
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
   border-radius: 16px;
   backdrop-filter: blur(10px);
   border-left: 4px solid #667eea;
@@ -342,7 +365,7 @@ body.modal-open {
   opacity: 1;
 }
 
-.dark-theme .product-description {
+.dark-theme .product-description{
   background: rgba(45, 55, 72, 0.9);
   color: #e2e8f0;
   border-left: 4px solid #764ba2;
@@ -729,7 +752,7 @@ body.modal-open {
   border: 1px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   opacity: 0;
-  margin: 2rem 0;
+  margin: -10px 0;
 }
 
 .accessories-section.fade-in-up {
@@ -825,7 +848,6 @@ body.modal-open {
   border-radius: 24px;
   text-align: center;
   color: white;
-  margin: 3rem 0;
   opacity: 0;
   animation: gradientShift 4s ease infinite;
   position: relative;
@@ -1434,7 +1456,6 @@ body.modal-open {
   .product-header {
     flex-direction: column;
     align-items: flex-start;
-    margin: 2rem 0;
     padding: 1.5rem;
   }
   

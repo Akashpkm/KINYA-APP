@@ -49,7 +49,7 @@ const Products = () => {
           id: 'phaco', 
           name: 'PHACO EMULSIFICATION', 
           image: './images/PHACO1.png', 
-          description: 'Advanced Phacoemulsification and Anterior Vitrectomy ',
+          description: 'Advanced Phacoemulsification and Anterior Vitrectomy System ',
           features: ['Advanced Fluidics ', 'High Cutting Efficiency', 'Enhanced Safety']
         },
         { 

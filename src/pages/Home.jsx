@@ -88,37 +88,64 @@ const navigate = useNavigate();
 
     return () => observer.disconnect();
   }, []);
+// Improved Testimonials auto-scroll with seamless loop
+useEffect(() => {
+  if (testimonialsTrackRef.current) {
+    const track = testimonialsTrackRef.current;
+    const container = testimonialsRef.current;
+    
+    // Duplicate testimonials for seamless loop
+    const testimonials = Array.from(track.children);
+    testimonials.forEach(testimonial => {
+      const clone = testimonial.cloneNode(true);
+      track.appendChild(clone);
+    });
 
-  // Improved Testimonials auto-scroll with seamless loop
-  useEffect(() => {
-    if (testimonialsTrackRef.current) {
-      const track = testimonialsTrackRef.current;
-      const container = testimonialsRef.current;
-      
-      // Duplicate testimonials for seamless loop
-      const testimonials = Array.from(track.children);
-      testimonials.forEach(testimonial => {
-        const clone = testimonial.cloneNode(true);
-        track.appendChild(clone);
-      });
+    let isPaused = false;
+    let scrollInterval;
 
-      const scrollTestimonials = () => {
-        if (container) {
-          const scrollLeft = container.scrollLeft;
-          const scrollWidth = track.scrollWidth / 2; // Since we duplicated
-          
-          if (scrollLeft >= scrollWidth) {
-            container.scrollLeft = 0;
-          } else {
-            container.scrollLeft += 1;
-          }
+    const scrollTestimonials = () => {
+      if (container && !isPaused) {
+        const scrollLeft = container.scrollLeft;
+        const scrollWidth = track.scrollWidth / 2; // Since we duplicated
+        
+        if (scrollLeft >= scrollWidth) {
+          container.scrollLeft = 0;
+        } else {
+          container.scrollLeft += 1;
         }
-      };
+      }
+    };
 
-      const scrollInterval = setInterval(scrollTestimonials, 30); // Faster speed
-      return () => clearInterval(scrollInterval);
+    const pauseScrolling = () => {
+      isPaused = true;
+    };
+
+    const resumeScrolling = () => {
+      isPaused = false;
+    };
+
+    // Add event listeners for hover events
+    if (container) {
+      // Pause when mouse enters (hovers)
+      container.addEventListener('mouseenter', pauseScrolling);
+      
+      // Resume when mouse leaves
+      container.addEventListener('mouseleave', resumeScrolling);
     }
-  }, []);
+
+    // Start the scrolling
+    scrollInterval = setInterval(scrollTestimonials, 30);
+
+    return () => {
+      clearInterval(scrollInterval);
+      if (container) {
+        container.removeEventListener('mouseenter', pauseScrolling);
+        container.removeEventListener('mouseleave', resumeScrolling);
+      }
+    };
+  }
+}, []);
 
   // Fixed WhatsApp button handler
   const handleWhatsAppClick = () => {
@@ -185,8 +212,8 @@ const navigate = useNavigate();
                 <span>Trusted Healthcare Solutions</span>
               </div>
               <h1 className="hero-title">
-                 <span className="title-line accent">KINYA</span>
-                <span className="title-line">Key Innovation in</span>
+                 <span className="title-line accent">Key Innovation in</span>
+                <span className="title-line"></span>
                 <span className="title-line">Your Access</span>
               </h1>
               <p className="hero-subtitle">
@@ -289,7 +316,7 @@ const navigate = useNavigate();
 
       {/* Stats Section */}
       <section className="stats" ref={statsRef}>
-        <div className="container">
+        <div className="container count">
           <div className="stats-grid">
             {[
               { number: '24', label: 'Years of Experties', suffix: '+' },
@@ -358,7 +385,7 @@ const navigate = useNavigate();
             <h2>Ready to Enhance Your Healthcare Services?</h2>
             <p>Contact us today for a personalized consultation and discover how our solutions can transform your medical practice.</p>
             <div className="cta-buttons">
-              <a href="tel:80568058370" className="btn btn-light">
+              <a href="tel:9789041308" className="btn btn-light">
                 <span>Call Now</span>
                 <i className="k fas fa-phone"></i>
               </a>

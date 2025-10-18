@@ -40,7 +40,7 @@ body.dark .about-page {
 /* Hero Section */
 .about-hero {
   background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
-  padding: 120px 0 80px;
+ padding: 100px 0 20px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -59,7 +59,6 @@ body.dark .about-page {
 
 .about-hero h1 {
   font-size: 3.5rem;
-  margin-bottom: 1rem;
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.8s ease;
@@ -81,7 +80,6 @@ body.dark .about-page {
 
 /* Mission Section */
 .mission {
-  padding: 100px 0;
   background-color: var(--bg-secondary);
 }
 
@@ -94,7 +92,7 @@ body.dark .about-page {
 
 .mission-text h2 {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .mission-text p {
@@ -149,14 +147,14 @@ body.dark .about-page {
 
 /* Values Section */
 .values {
-  padding: 100px 0;
+  padding: 10px 0;
   background-color: var(--bg-primary);
 }
 
 .values h2 {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .values-grid {
@@ -207,7 +205,6 @@ body.dark .about-page {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
-  margin-top: 50px;
 }
 
 .office-card {
@@ -244,12 +241,12 @@ body.dark .about-page {
 .offices h2{
   text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 3rem
+    margin-bottom: 1rem
 }
 
 .office-card h3 {
   color: #667eea;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
   font-size: 1.3rem;
   font-weight: 700;
   display: flex;
@@ -326,7 +323,7 @@ body.dark .about-page {
 /* Team Section */
 /* Enhanced Team Section */
 .team {
-  padding: 100px 0;
+  padding: 10px 0;
   background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
   position: relative;
 }
@@ -344,7 +341,7 @@ body.dark .about-page {
 .team h2 {
   text-align: center;
   font-size: 2.8rem;
-  margin-bottom: 1rem;
+  margin-bottom:1rem;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -366,7 +363,7 @@ body.dark .about-page {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
-  margin-top: 50px;
+  margin-top: -20px;
 }
 
 .team-card {
@@ -547,7 +544,7 @@ body.dark .about-page {
   .office-card, 
   .team-card {
     margin-bottom: 0;
-    margin-bottom: 15px;
+    margin-bottom: 1px;
   }
   
   .team-info {
@@ -658,7 +655,7 @@ body.dark .about-page {
   .values,
   .offices,
   .team {
-    padding: 60px 0;
+    padding: 20px 0;
   }
 }
 

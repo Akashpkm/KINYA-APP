@@ -146,9 +146,9 @@ We partner closely with surgeons to drive innovation, prioritize continuous impr
               { 
                 title: 'DELHI OFFICE', 
                 address: 'Innotech Genesis pvt ltd House no 5 sec 12 vasundhara ghaziabad up -201012',
-                contact: 'Mr Mohapatra',
-                phone: '+91 8882117448',
-                alternatePhone: '+91 63232 323233',
+                contact: 'Mr.S.R. Mohapatra',
+                phone: '+91 9911502377',
+                alternatePhone: '+91 7982411457',
                 email: 'sales@innotechgenesis.com'
               },
               { 
@@ -157,7 +157,7 @@ We partner closely with surgeons to drive innovation, prioritize continuous impr
                 contact: 'Mr Ashokan',
                 phone: '+91 9880264118',
                 alternatePhone: '+91 7795255782',
-                email: ' ashokana81@gmail.com'
+                email: ' srikaniblr@gmail.com'
               },
               { 
                 title: 'MUMBAI OFFICE', 

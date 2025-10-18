@@ -70,7 +70,7 @@ body.dark .video-page .container {
 
 .page-header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   margin-top: 3rem;
   animation: slideInDown 0.8s ease-out 0.2s both;
 }
@@ -150,7 +150,7 @@ body.dark .video-page .page-title {
 
 /* Featured Video Section */
 .featured-video-section {
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   animation: slideInUp 0.8s ease-out 0.6s both;
 }
 
@@ -432,7 +432,6 @@ body.dark .video-page .watch-btn.secondary:hover {
 /* Video Library */
 .section-header {
   text-align: center;
-  margin-bottom: 3rem;
   animation: fadeIn 0.8s ease-out 0.8s both;
 }
 

@@ -482,7 +482,7 @@ const ProductDetail = () => {
           </div>
           
           {product.description && (
-            <div className="product-description fade-in-up">
+            <div className="product-description1 fade-in-up">
               <p>{product.description}</p>
               {product.detailedDescription && (
                 <p className="detailed-description">{product.detailedDescription}</p>
