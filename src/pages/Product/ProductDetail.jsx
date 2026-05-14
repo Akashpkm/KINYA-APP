@@ -77,36 +77,34 @@ const productDetails = {
   },
   'phaco': {
     title: 'PHACO VITRECTOMY SYSTEM',
-    image: '/images/PHACO1.png',
+    image: '/images/PHACO2.png',
     brochure: '/BROCHURES/PHACO.pdf',
     description: 'Advanced ophthalmic surgical system designed for precision vitreoretinal procedures with cutting-edge technology.',
     features: [
       'Advanced Fluidics System',
-      'Effective Cutting in all grades of Catract',
+      'Effective Cutting in all grades of Cataract',
       'Ergonomic design for surgeon comfort',
-      'Compatible with 2.8mm and MICS Procedure',
+      'Compatible with 2.8mm and 2.2mm Procedure',
       'Multi Functional Foot Pedal'
     ],
     specifications: [
         { name: 'Phaco', value: '40 KHZ ,4 Crystal Titanium Hand Piece' },
-          { name: 'Phaco Modes', value: 'Continuos / Pulse / Burst / Smart Pulse' },
-          { name: 'Irrigation ', value: 'Automated and Gravity' },
-      { name: 'Pump System', value: 'In built vacuum pump ' },
+          { name: 'Phaco Modes', value: 'Continuos / Pulse / Burst / Ocuflip / Smart Pulse' },
+          { name: 'Irrigation ', value: 'Gravity' },
+      { name: 'Pump System', value: 'Advanced Peristaltic System ' },
+      { name: 'Fluid Management System', value: ' Autoclave Snapfit and Easy to Deploy Cassette System' },
         { name: 'Vitrectomy', value: '2,500 CPM' },
-      { name: 'Display', value: '15 inches Touch Screen' },
+      { name: 'Display', value: '10 inches Touch Screen' },
      
     ],
     accessories: [
-      { image: '/PHACO/cassette-phaco.png', name: 'Cassette' },
-      { image: '/PHACO/diathermy eraser.png', name: 'Diathermy Eraser' },
+      { image: '/PHACO/cassette-phaco', name: 'Cassette' },
+      
       { image: '/PHACO/diaTHERMY PROBE.png', name: 'Diathermy Probe' },
       { image: '/PHACO/diathermy forcep.png', name: 'Diathermy  Forcep' },
-      { image: '/PHACO/ia tube.png', name: 'IA Tube ' },
-      { image: '/PHACO/MITLAB ADAPTER.png', name: 'Mitlab Adapter' },
-       { image: '/PHACO/phaco frag.png', name: 'Phaco Tip ' },
+     
+       { image: '/PHACO/phaco frag', name: 'Phaco Tip ' },
         { image: '/PHACO/phaco tray.png', name: 'Phaco Tray' },
-      { image: '/PHACO/VGPC.png', name: 'VGPC' },
-       { image: '/PHACO/CUTTER.png', name: 'Vitrectomy Cutter-DORC' },
         { image: '/PHACO/VITRECTOMY CUTTER-MIDLAB.png', name: 'Vitrectomy Cutter-Mitlab' },]
   },
   'ant-vit': {
@@ -115,30 +113,28 @@ const productDetails = {
     brochure: '/BROCHURES/ANTERIOR.pdf',
     description: 'Advanced ophthalmic surgical system designed for precision vitreoretinal procedures with cutting-edge technology.',
     features: [
+      'Easy to Deploy - In Built Vaccum Pump and Compressor',
       'Advanced cutting technology for precise vitreous removal',
       'Ergonomic design for surgeon comfort',
-      'Compatible with various Vitrectomy Cutters',
-         'In Built Diathermy ',
+      
       
 
     ],
     specifications: [
-      { name: 'Vitrectomy', value: ' 5,000 CPM' },
-      { name: 'Diathermy', value: '1 MHZ' },
-      { name: 'Vacuum', value: 'Venturi Pump 0 to 650mmHg ' },
+      { name: 'Vitrectomy', value: ' 3,000 CPM' },
+       { name: 'Vitrectomy Drive', value: ' In Built Compressor' },
+      {name:'Fludics System',value:'In Built Vaccum Pump'},
+      { name: 'Vacuum Range', value: 'Venturi Pump 0 to 650mmHg ' },
 
     ],
     accessories: [
        { image: '/ANT/cassette-anterior.png', name: 'Cassette' },
-      { image: '/ANT/diathermy eraser.png', name: 'Diathermy Eraser' },
+      
       { image: '/ANT/diaTHERMY PROBE.png', name: 'Diathermy Probe' },
       { image: '/ANT/diathermy forcep.png', name: 'Diathermy  Forcep' },
       { image: '/ANT/ia tube.png', name: 'IA Tube ' },
       { image: '/ANT/MITLAB ADAPTER.png', name: 'Mitlab Adapter' },
-       { image: '/ANT/phaco frag.png', name: 'Phaco Frag ' },
-        { image: '/ANT/phaco tray.png', name: 'Phaco Tray' },
-      { image: '/ANT/VGPC.png', name: 'VGPC' },
-       { image: '/ANT/CUTTER.png', name: 'Vitrectomy Cutter-DORC' },
+     
         { image: '/ANT/VITRECTOMY CUTTER-MIDLAB.png', name: 'Vitrectomy Cutter-Mitlab' },
     ]
     

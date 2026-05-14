@@ -1,5 +1,5 @@
 // src/App.jsx
-import React from 'react';
+import React, { useEffect ,useState} from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
@@ -14,8 +14,29 @@ import Contact from './pages/Contact';
 import './App.css';
 
 function App() {
+   const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+
+    // Simulate app loading
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+
+  }, []);
+
+
+ 
    return(
  <Router>
+  {/* Overlay Loader */}
+      {loading && (
+        <div className="loader-container">
+          <div className="loader"><img src='/src/assets/kinya.png' className='loading-image'/></div>        
+        </div>
+      )}
       <div className="App">
         <WelcomeModal/>
         <Navbar />

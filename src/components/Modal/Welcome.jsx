@@ -47,7 +47,7 @@ function WelcomeModal() {
             <ul className="wm-list">
               <li><span>K</span> - Key</li>
               <li><span>I</span> - Innovation</li>
-              <li><span>N</span> -  Network</li>
+              <li><span>N</span> -  IN</li>
               <li><span>Y</span> - Your</li>
               <li><span>A</span> - Access</li>
             </ul>

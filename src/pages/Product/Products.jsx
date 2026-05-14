@@ -57,7 +57,7 @@ const Products = () => {
           name: 'ANT_VIT VITRECTOMY ', 
           image: './images/ANTERIOR.png', 
           description: 'Compact anterior vitrectomy system for delicate procedures.',
-          features: ['Compact Size', 'Precision Control', 'Easy Handling']
+          features: ['In Built Pump', 'Precision Control', 'Easy Handling']
         },
         { 
           id: 'air-injection', 
