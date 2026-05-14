@@ -12,6 +12,7 @@ import Video from './pages/Video';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import './App.css';
+import img from './assets/kinya.png'
 
 function App() {
    const [loading, setLoading] = useState(true);
@@ -34,7 +35,7 @@ function App() {
   {/* Overlay Loader */}
       {loading && (
         <div className="loader-container">
-          <div className="loader"><img src='/src/assets/kinya.png' className='loading-image'/></div>        
+          <div className="loader"><img src={img} className='loading-image'/></div>        
         </div>
       )}
       <div className="App">
