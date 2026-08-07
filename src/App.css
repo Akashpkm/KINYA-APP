@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open sans", sans-serif;
+  font-variation-settings:
+    "wdth" 75;
 }
 
 body {
@@ -123,7 +126,7 @@ html {
 .btn {
   display: inline-block;
   padding: 12px 25px;
-  border-radius: 5px;
+  border-radius: 20px;
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
@@ -154,7 +157,7 @@ html {
 
 /* Container utility */
 .container {
-  max-width: 1450px;
+  max-width: 1850px;
   margin: 0 auto;
   padding: 15px;
 }

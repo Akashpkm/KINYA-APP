@@ -97,7 +97,7 @@ function About() {
             <div className="mission-text fade-in-left">
               <h2>Our Mission</h2>
               <p>Kinya Medical Systems is committed to Develop and Manufacture Advanced Vitrectomy and Phaco Emulsification systems that deliver simple, cost-effective solutions for complex surgical challenges. 
-We partner closely with surgeons to drive innovation, prioritize continuous improvement, and respond swiftly to customer needs and concerns.
+ We partner closely with surgeons to drive innovation, prioritize continuous improvement, and respond swiftly to customer needs and concerns.
  Our goal is to become the global leader in ophthalmic devices, known for quality, affordability, and reliability.</p>
               <p>We strive to build a workplace where the brightest engineers are inspired to innovate, fostering a culture of creativity, collaboration, and excellence that propels us toward a future where advanced eye care is within everyone’s reach.</p>
             </div>
@@ -141,7 +141,7 @@ We partner closely with surgeons to drive innovation, prioritize continuous impr
                 title: 'OFFICE & MANUFACTURING', 
                 address: 'No 46 Ranga Rice Mill, Rani Anna Nagar, Somanathapuram, Guduvancheri, Tamil Nadu, India',
                 contact: 'Mrs Nisha Kiran',
-                phone: '+91 9789041308',
+                phone: '+91 9789041308 /',
                 alternatePhone: ' +91 8056805718',
                 email: 'sales@kinya.in'
               },
@@ -149,15 +149,15 @@ We partner closely with surgeons to drive innovation, prioritize continuous impr
                 title: 'DELHI OFFICE', 
                 address: 'Innotech Genesis pvt ltd House no 5 sec 12 vasundhara ghaziabad up -201012',
                 contact: 'Mr.S.R. Mohapatra',
-                phone: '+91 9911502377',
-                alternatePhone: '+91 7982411457',
+                phone: '+91 9911502377 /',
+                alternatePhone: '+91 7982411457 ',
                 email: 'sales@innotechgenesis.com'
               },
               { 
                 title: 'BANGALORE OFFICE', 
                 address: 'SRI KANI #724, SRI KANISHKA,11TH BLOCK, BSK 6TH STAGE,BDA LAYOUT, BEHIND ARVIND TATA MOTORS,KENGERI POST,BENGALURU - 560060.KARNATAKA',
                 contact: 'Mr Ashokan',
-                phone: '+91 9880264118',
+                phone: '+91 9880264118 /',
                 alternatePhone: '+91 7795255782',
                 email: ' srikaniblr@gmail.com'
               },
@@ -165,20 +165,44 @@ We partner closely with surgeons to drive innovation, prioritize continuous impr
                 title: 'MUMBAI OFFICE', 
                 address: 'Mumbai, India',
                 contact: 'Mr. Sakthivel',
-                phone: '+91 9500617481',
+                phone: '+91 9500617481  /',
                 alternatePhone: '+91 8675244091',
                 email: 'sales@kinya.in'
               },
+                  { 
+                title: 'HYDERABAD OFFICE', 
+                address: 'MI Enterprices Hyderabad, India',
+                contact: 'Mr. Mohan',
+                phone: '+91 8754599110',
+              },
+                   { 
+                title: 'AHMEDABAD OFFICE', 
+                address: 'AS Biotronics Ahmedabad, India',
+                contact: 'Mr. Mathan',
+                phone: '+91 9825625520',
+              },
+                     { 
+                title: 'RAIPUR OFFICE', 
+                address: 'Raipur , India',
+                contact: 'Mr. Saravan',
+                phone: '+91 9300793139',
+              },
+                      { 
+                title: 'NAGPUR OFFICE', 
+                address: 'Nagpur India',
+                contact: 'Mr. Amit Vishvakarma',
+                phone: '+91 9371568902',
+              },
+               
                
             ].map((office, index) => (
               <div key={index} className="office-card slide-up" style={{ animationDelay: `${index * 0.1}s` }}>
-                <h3>{office.title}</h3>
+                <h3><i class="fa-solid fa-building"></i> {office.title}</h3>
                 <p>{office.address}</p>
-                <div className="contact-info">
-                  <strong style={{color:'green'}}>Contact : {office.contact}</strong>
-                  <strong>PhoneNo : <span>{office.phone}</span></strong>
-                  <strong>Alter No : <span>{office.alternatePhone}</span></strong>
-                  <strong style={{color:'deepskyblue'}}>Email : <span>{office.email}</span></strong>
+                <div className="about-contact-info">
+                  <strong ><i class="fa-solid fa-address-book"></i> {office.contact}</strong>
+                  <strong><i class="fa-solid fa-phone"></i> <span>{office.phone} {office.alternatePhone}</span></strong>
+                  <strong>{office.email ? (<i class="fa-solid fa-envelope"></i>):" "} <span>{office.email}</span></strong>
                 </div>
               </div>
             ))}
@@ -213,7 +237,7 @@ We partner closely with surgeons to drive innovation, prioritize continuous impr
         <div className="container">
           <h2 className="slide-up">Ready to Partner With Us?</h2>
           <p className="slide-up delay-1">Join hundreds of healthcare providers across Kenya who trust Kinya Medical for their equipment and pharmaceutical needs.</p>
-          <a href="#contact" className="btn btn-light slide-up delay-2">Contact Us Today</a>
+          <a href="#contact" className="cta-btn btn-light slide-up delay-2">Contact Us Today</a>
         </div>
       </section>
     </div>

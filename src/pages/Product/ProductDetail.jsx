@@ -79,7 +79,7 @@ const productDetails = {
     title: 'PHACO VITRECTOMY SYSTEM',
     image: '/images/PHACO2.png',
     brochure: '/BROCHURES/PHACO.pdf',
-    description: 'Advanced ophthalmic surgical system designed for precision vitreoretinal procedures with cutting-edge technology.',
+    description: 'An advanced Phaco Vitrectomy System delivering precision, stable fluidics, and exceptional performance for anterior and posterior segment surgeries.',
     features: [
       'Advanced Fluidics System',
       'Effective Cutting in all grades of Cataract',
@@ -109,52 +109,45 @@ const productDetails = {
   },
   'ant-vit': {
     title: 'ANT_VIT VITRECTOMY SYSTEM',
-    image: '/images/ANTERIOR.png',
+    image: '/images/ANTERIORVIT.png',
     brochure: '/BROCHURES/ANTERIOR.pdf',
-    description: 'Advanced ophthalmic surgical system designed for precision vitreoretinal procedures with cutting-edge technology.',
+    description: 'A precision anterior vitrectomy system designed for safe, efficient, and controlled vitreous removal during anterior segment surgeries.',
     features: [
       'Easy to Deploy - In Built Vaccum Pump and Compressor',
       'Advanced cutting technology for precise vitreous removal',
       'Ergonomic design for surgeon comfort',
-      
-      
-
     ],
     specifications: [
       { name: 'Vitrectomy', value: ' 3,000 CPM' },
-       { name: 'Vitrectomy Drive', value: ' In Built Compressor' },
+      { name: 'Vitrectomy Drive', value: ' In Built Compressor' },
       {name:'Fludics System',value:'In Built Vaccum Pump'},
       { name: 'Vacuum Range', value: 'Venturi Pump 0 to 650mmHg ' },
-
     ],
     accessories: [
-       { image: '/ANT/cassette-anterior.png', name: 'Cassette' },
-      
+      { image: '/ANT/cassette-anterior.png', name: 'Cassette' },
       { image: '/ANT/diaTHERMY PROBE.png', name: 'Diathermy Probe' },
       { image: '/ANT/diathermy forcep.png', name: 'Diathermy  Forcep' },
       { image: '/ANT/ia tube.png', name: 'IA Tube ' },
       { image: '/ANT/MITLAB ADAPTER.png', name: 'Mitlab Adapter' },
-     
-        { image: '/ANT/VITRECTOMY CUTTER-MIDLAB.png', name: 'Vitrectomy Cutter-Mitlab' },
+      { image: '/ANT/VITRECTOMY CUTTER-MIDLAB.png', name: 'Vitrectomy Cutter-Mitlab' },
     ]
     
   },
   'air-injection': {
     title: 'AIR_INJECTION VITRECTOMY SYSTEM',
-    image: '/images/AIR-INJ.png',
+    image: '/images/AIRINJ.png',
     brochure: '/BROCHURES/SILICON.pdf',
-    description: 'Advanced ophthalmic surgical system designed for precision vitreoretinal procedures with cutting-edge technology.',
+    description: 'An advanced air injection vitrectomy system providing precise air-fluid exchange and enhanced control during vitreoretinal procedures.',
     features: [
-      'Advanced cutting technology for precise vitreous removal',
-      'Integrated fluid management system',
-      'Ergonomic design for surgeon comfort',
-      'Compatible with various surgical approaches',
-      'High-resolution visualization system'
+      'Precise silicone oil infusion for tamponade in retinal detachments.',
+      'Enhances surgical control with convenient foot pedal activation',
+      'Optimized to handle injection pressures suitable for high-viscositsilicone. ',
+      'Allowing for uninterrupted operation and focus on the surgical field'
     ],
     specifications: [
-      { name: 'Cutting Speed', value: 'Up to 10,000 cpm' },
-      { name: 'Illumination', value: 'Xenon LED' },
-      { name: 'Footprint', value: 'Compact mobile cart' }
+      { name: 'Injection Pressure', value: 'Up to 6.5 Bar' },
+      { name: 'Silicon Oils', value: 'Up to 5000 Centistokes' },
+      { name: 'Maximum Air Pressure', value: ' 200 mmHg' }
     ],
     accessories: [
       { image: '/AIR INJ/silicon oil injection extraction kit.png', name: 'Silicon Oil Injection Extraction Kit' },
@@ -165,18 +158,18 @@ const productDetails = {
     title: 'LIGHT SOURCE VITRECTOMY SYSTEM',
     image: '/images/LIGHTSOURCE.png',
     brochure: '/BROCHURES/LEDLIGHT.pdf',
-    description: 'Advanced ophthalmic surgical system designed for precision vitreoretinal procedures with cutting-edge technology.',
+    description: 'A high-intensity LED light source delivering bright, stable illumination for enhanced visualization during vitreoretinal surgery.',
     features: [
-      'Advanced cutting technology for precise vitreous removal',
-      'Integrated fluid management system',
-      'Ergonomic design for surgeon comfort',
-      'Compatible with various surgical approaches',
-      'High-resolution visualization system'
+      'LED Light Source is a sustainableinvestment, minimizing the need for replacements and ensuring continuous operation.',
+      'Making it an energy-efficient choice for busy medical facilities.',
+      'The Highest Safety Standards, ensuring patient and operator safety during prolonged use.',
+      'The fiber optic compatibility with major brands allows for easy integration with existing medical equipment',
+      ' Robust build and easy-to-use interface.'
     ],
     specifications: [
-      { name: 'Cutting Speed', value: 'Up to 10,000 cpm' },
-      { name: 'Illumination', value: 'Xenon LED' },
-      { name: 'Footprint', value: 'Compact mobile cart' }
+      { name: 'High-Intensity Lighting:', value: '80W Power' },
+      { name: 'Lifespan', value: '50,000 hours' },
+      { name: 'Power Consumption', value: '110W' }
     ],
     accessories: [
       { image: '/LIGHTSOURCE/ALCON.png', name: 'Alcon Light Pipe' },
@@ -222,18 +215,18 @@ const productDetails = {
     title: 'AUTOCLAVE STERILIZER',
     image: '/images/AUTOCLAVE.png',
     brochure: '/BROCHURES/AUTOCLAVE1.pdf',
-    description: 'Advanced ophthalmic surgical system designed for precision vitreoretinal procedures with cutting-edge technology.',
+    description: 'High-pressure steam sterilization for safe, reliable, and efficient sterilization of medical and surgical instruments.',
     features: [
-      'Advanced cutting technology for precise vitreous removal',
-      'Integrated fluid management system',
-      'Ergonomic design for surgeon comfort',
-      'Compatible with various surgical approaches',
-      'High-resolution visualization system'
+      'Pre-Vacuum Air Removal for Efficient Sterilization',
+      ' Automatic water quality check - protects the chamber from corrosion',
+      'Convenience & Sterilization Intergrity',
+      'Cycle Records-Easy traceability through USB memory port'
     ],
     specifications: [
-      { name: 'Cutting Speed', value: 'Up to 10,000 cpm' },
-      { name: 'Illumination', value: 'Xenon LED' },
-      { name: 'Footprint', value: 'Compact mobile cart' }
+      { name: 'Capacity', value: '18L ' },
+      { name: 'Heater power', value: '24 kw' },
+      { name: 'Temperature Range', value: 'Upto 134 °C' },
+       { name: 'Duty Cycle', value: 'Four Cycle (8hrs)' }
     ],
     accessories: [
       { image: '/AUTOCLAVE/AUTOCLAVE HELIX-PCD TEST KIT.png', name: 'Autoclave HELIX-PCD Test Kit' },
@@ -247,18 +240,17 @@ const productDetails = {
     title: 'PLASMA STERILIZER',
     image: '/images/PLASMA.png',
     brochure: '/BROCHURES/PLASMA.pdf',
-    description: 'Advanced ophthalmic surgical system designed for precision vitreoretinal procedures with cutting-edge technology.',
+    description: 'Advanced low-temperature plasma sterilization for safe, fast, and effective sterilization of heat-sensitive medical instruments.',
     features: [
-      'Advanced cutting technology for precise vitreous removal',
-      'Integrated fluid management system',
-      'Ergonomic design for surgeon comfort',
-      'Compatible with various surgical approaches',
-      'High-resolution visualization system'
+      'Safe , Simple , Quickcycletime , Ecofriendly',
+      'Software Controlled Dexterous Door Locking',
+      'Ergonomic and Intuitive Touch Screen',
+      'Non Lumen Loads are Sterilized with the Non Lumen Cycle',
     ],
     specifications: [
-      { name: 'Cutting Speed', value: 'Up to 10,000 cpm' },
-      { name: 'Illumination', value: 'Xenon LED' },
-      { name: 'Footprint', value: 'Compact mobile cart' }
+      { name: 'Chamber Volume', value: '35 Ltr' },
+      { name: 'Chamber Size', value: '610mm , 300mm , 225mm' },
+      { name: 'Cycle Time', value: '25 ± 3 min' }
     ],
     accessories: [
       { image: '/PLASMA/PLASMA BIOLOGICAL INDICATOR.png', name: 'Biological Indicator' },
@@ -272,18 +264,17 @@ const productDetails = {
     title: 'ETO STERILIZER',
     image: '/images/ETO.png',
     brochure: '/BROCHURES/ETO.pdf',
-    description: 'Advanced ophthalmic surgical system designed for precision vitreoretinal procedures with cutting-edge technology.',
+    description: 'Reliable ethylene oxide (ETO) sterilization for safe and effective processing of heat- and moisture-sensitive medical devices.',
     features: [
-      'Advanced cutting technology for precise vitreous removal',
-      'Integrated fluid management system',
-      'Ergonomic design for surgeon comfort',
-      'Compatible with various surgical approaches',
-      'High-resolution visualization system'
+      'Automatic Door Locking Mechanism',
+      'In-Built Humidity Generator',
+      'Unit Comes with an Integrated Printer ',
+      'Oil Free System'
     ],
     specifications: [
-      { name: 'Cutting Speed', value: 'Up to 10,000 cpm' },
-      { name: 'Illumination', value: 'Xenon LED' },
-      { name: 'Footprint', value: 'Compact mobile cart' }
+      { name: 'Volume', value: '50 Ltr' },
+      { name: 'Chamber Size', value: '12.0"(H) X 12.0"(W) X 24.0"(D)' },
+      { name: 'Cycle Time', value: 'Warm(7-8Hrs) - Cold(9-10Hrs)' }
     ],
     accessories: [
       { image: '/ETO/ETO BIOLOGICAL INDICATOR.png', name: 'Biological Indicator' },
@@ -460,7 +451,7 @@ const ProductDetail = () => {
 
   return (
     <div className={`product-detail-page ${isVisible ? 'page-visible' : ''}`}>
-      <div className="container">
+      <div className="productdetails-container">
         <Link to="/products" className="back-link slide-in-left">
           <span className="back-arrow">←</span> Back to Products
         </Link>
@@ -479,7 +470,7 @@ const ProductDetail = () => {
           
           {product.description && (
             <div className="product-description1 fade-in-up">
-              <p>{product.description}</p>
+              <p><i className="fa-solid fa-award"></i> {product.description}</p>
               {product.detailedDescription && (
                 <p className="detailed-description">{product.detailedDescription}</p>
               )}
@@ -496,7 +487,7 @@ const ProductDetail = () => {
                   <div className="specifications-grid">
                     {product.specifications.map((spec, index) => (
                       <div key={index} className="spec-item">
-                        <span className="spec-name">{spec.name}:</span>
+                        <span className="spec-name"><i class="fa-solid fa-feather-pointed"></i> {spec.name} </span>
                         <span className="spec-value">{spec.value}</span>
                       </div>
                     ))}
@@ -515,7 +506,7 @@ const ProductDetail = () => {
                       className="feature-item stagger-animate"
                       style={{ animationDelay: `${index * 0.1}s` }}
                     >
-                      <span className="feature-icon">✓</span>
+                      <span className="feature-icon"><i className="fa-solid fa-circle-dot"></i></span>
                       <p className="feature-text">{feature}</p>
                     </div>
                   ))}
@@ -571,9 +562,9 @@ const ProductDetail = () => {
                   Enquiry Now
                 </button>
               </div>
-              <div className="c contact-info">
-                <p>Call Us : <strong>{salesContact.phone}</strong></p>
-                <p>Email : <strong>{salesContact.email}</strong></p>
+              <div className="cta-contact-info">
+                <p><i class="fa-solid fa-phone"></i>  <strong>{salesContact.phone}</strong></p>
+                <p><i class="fa-solid fa-envelope"></i>  <strong>{salesContact.email}</strong></p>
               </div>
             </div>
           </div>

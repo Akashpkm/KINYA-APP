@@ -35,8 +35,8 @@ const Products = () => {
   const productCategories = [
     {
       id: 'vitrectomy',
-      title: 'VITRECTOMY&PHACO ',
-      icon: '🔬',
+      title: 'VITRECTOMY & PHACO ',
+      icon: 'fa-solid fa-eye',
       products: [
         { 
           id: 'posterior', 
@@ -55,14 +55,14 @@ const Products = () => {
         { 
           id: 'ant-vit', 
           name: 'ANT_VIT VITRECTOMY ', 
-          image: './images/ANTERIOR.png', 
+          image: './images/ANTERIORVIT.png', 
           description: 'Compact anterior vitrectomy system for delicate procedures.',
           features: ['In Built Pump', 'Precision Control', 'Easy Handling']
         },
         { 
           id: 'air-injection', 
           name: 'AIR INJECTION MODULE', 
-          image: './images/AIR-INJ.png', 
+          image: './images/AIRINJ.png', 
           description: 'Precise air pressure control module for vitreoretinal surgery.',
           features: ['Precise Control', 'Safety Lock', 'Digital Display']
         },
@@ -78,7 +78,7 @@ const Products = () => {
     {
       id: 'diagnostic',
       title: 'DIAGNOSTIC A/B/P SCAN',
-      icon: '📊',
+      icon: 'fa-solid fa-stethoscope',
       products: [
         { 
           id: 'abp-scan', 
@@ -92,7 +92,7 @@ const Products = () => {
     {
       id: 'sterilizer',
       title: 'STERILIZER',
-      icon: '⚡',
+      icon: 'fa-solid fa-shield',
       products: [
         { 
           id: 'autoclave', 
@@ -118,10 +118,11 @@ const Products = () => {
       ]
     }
   ];
+  
 
   const handleViewMore = (productId) => {
     window.scrollTo(0, 0);
-    navigate(`/product/${productId}`);
+    navigate(`/products/${productId}`);
   };
 
   const filteredCategories = activeCategory === 'all' 
@@ -130,16 +131,11 @@ const Products = () => {
 
   return (
     <div className="products-page" data-theme={currentTheme}>
-      <div className="container">
+      <div className="product-container">
         {/* Hero Section */}
         <div className="products-hero">
-          <h1 className="page-title">KINYA PRODUCTS</h1>
-          <p className="page-subtitle">Discover our range of high-quality medical equipment and supplies</p>
-          <div className="hero-decoration">
-            <div className="decoration-circle"></div>
-            <div className="decoration-circle"></div>
-            <div className="decoration-circle"></div>
-          </div>
+          <h1 className="productpage-title">KINYA PRODUCTS</h1>
+          <p className="productpage-subtitle">Discover our range of high-quality medical equipment and supplies</p>
         </div>
         
         {/* Category Filter */}
@@ -148,7 +144,7 @@ const Products = () => {
             className={`filter-btn ${activeCategory === 'all' ? 'active' : ''}`}
             onClick={() => setActiveCategory('all')}
           >
-            <span className="btn-icon">⭐</span>
+            <span className="btn-icon"><i class="fa-solid fa-star"></i></span>
             All Products
           </button>
           {productCategories.map(category => (
@@ -157,8 +153,8 @@ const Products = () => {
               className={`filter-btn ${activeCategory === category.id ? 'active' : ''}`}
               onClick={() => setActiveCategory(category.id)}
             >
-              <span className="btn-icon">{category.icon}</span>
-              {category.title.split(' ').slice(0, 2).join(' ')}
+              <span className="btn-icon"><i className={category.icon}></i></span>
+              {category.title.split(' ').slice(0, 3).join(' ')}
             </button>
           ))}
         </div>
@@ -169,7 +165,7 @@ const Products = () => {
             <div key={category.id} className="product-category">
               <div className="category-header">
                 <h2 className="category-title">
-                  <span className="category-icon">{category.icon}</span>
+                  <span className="category-icon"><i className={category.icon}></i></span>
                   {category.title}
                 </h2>
                 <div className="category-line"></div>

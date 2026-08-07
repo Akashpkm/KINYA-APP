@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
-import backgroundVideo from "./images/vi.mp4";
+import heroImage from "./images/PHACO2.png";
+import Slider from '../components/Slider';
 
 function Home() {
   const statsRef = useRef(null);
@@ -9,8 +10,8 @@ function Home() {
   const testimonialsTrackRef = useRef(null);
   const [theme, setTheme] = useState('light');
 
-  
-const navigate = useNavigate();
+
+  const navigate = useNavigate();
 
   const handleNavigation = (path) => {
     navigate(path);
@@ -30,7 +31,7 @@ const navigate = useNavigate();
       role: 'VR SURGEON',
       hospital: 'Laxmi Eye Institute, Panvel',
       text: 'An excellent value-for-money machine. Comparable to all others in its class And great service support too!',
-      avatar:'./DOCTOR/Deventra Venkatramani.jpg' ,
+      avatar: './DOCTOR/Deventra Venkatramani.jpg',
       rating: 5
     },
     {
@@ -54,7 +55,7 @@ const navigate = useNavigate();
       role: 'VR SURGEON',
       hospital: 'Pink City Eye Hospital, Jaipur',
       text: 'We have been using thr Kinya HOPE platform since its very inception, till its latest iteration and very happy with its performance and reliability. The constant improvements in the interface and the fluidics indicates the ongoing commitment of the companys engineering team to respond to user feedback. It is now a great product capable of use in a wide variety of surgical situations. The versatility to use consumables from multiple vendors also makes the system very attractive. We highly recommend the platform for anyone looking to buy a posterior segment surgical platform.',
-     avatar: './DOCTOR/Abhishek Kothari.jpg',
+      avatar: './DOCTOR/Abhishek Kothari.jpg',
       rating: 5
     },
     {
@@ -88,64 +89,64 @@ const navigate = useNavigate();
 
     return () => observer.disconnect();
   }, []);
-// Improved Testimonials auto-scroll with seamless loop
-useEffect(() => {
-  if (testimonialsTrackRef.current) {
-    const track = testimonialsTrackRef.current;
-    const container = testimonialsRef.current;
-    
-    // Duplicate testimonials for seamless loop
-    const testimonials = Array.from(track.children);
-    testimonials.forEach(testimonial => {
-      const clone = testimonial.cloneNode(true);
-      track.appendChild(clone);
-    });
+  // Improved Testimonials auto-scroll with seamless loop
+  useEffect(() => {
+    if (testimonialsTrackRef.current) {
+      const track = testimonialsTrackRef.current;
+      const container = testimonialsRef.current;
 
-    let isPaused = false;
-    let scrollInterval;
+      // Duplicate testimonials for seamless loop
+      const testimonials = Array.from(track.children);
+      testimonials.forEach(testimonial => {
+        const clone = testimonial.cloneNode(true);
+        track.appendChild(clone);
+      });
 
-    const scrollTestimonials = () => {
-      if (container && !isPaused) {
-        const scrollLeft = container.scrollLeft;
-        const scrollWidth = track.scrollWidth / 2; // Since we duplicated
-        
-        if (scrollLeft >= scrollWidth) {
-          container.scrollLeft = 0;
-        } else {
-          container.scrollLeft += 1;
+      let isPaused = false;
+      let scrollInterval;
+
+      const scrollTestimonials = () => {
+        if (container && !isPaused) {
+          const scrollLeft = container.scrollLeft;
+          const scrollWidth = track.scrollWidth / 2; // Since we duplicated
+
+          if (scrollLeft >= scrollWidth) {
+            container.scrollLeft = 0;
+          } else {
+            container.scrollLeft += 1;
+          }
         }
-      }
-    };
+      };
 
-    const pauseScrolling = () => {
-      isPaused = true;
-    };
+      const pauseScrolling = () => {
+        isPaused = true;
+      };
 
-    const resumeScrolling = () => {
-      isPaused = false;
-    };
+      const resumeScrolling = () => {
+        isPaused = false;
+      };
 
-    // Add event listeners for hover events
-    if (container) {
-      // Pause when mouse enters (hovers)
-      container.addEventListener('mouseenter', pauseScrolling);
-      
-      // Resume when mouse leaves
-      container.addEventListener('mouseleave', resumeScrolling);
-    }
-
-    // Start the scrolling
-    scrollInterval = setInterval(scrollTestimonials, 30);
-
-    return () => {
-      clearInterval(scrollInterval);
+      // Add event listeners for hover events
       if (container) {
-        container.removeEventListener('mouseenter', pauseScrolling);
-        container.removeEventListener('mouseleave', resumeScrolling);
+        // Pause when mouse enters (hovers)
+        container.addEventListener('mouseenter', pauseScrolling);
+
+        // Resume when mouse leaves
+        container.addEventListener('mouseleave', resumeScrolling);
       }
-    };
-  }
-}, []);
+
+      // Start the scrolling
+      scrollInterval = setInterval(scrollTestimonials, 30);
+
+      return () => {
+        clearInterval(scrollInterval);
+        if (container) {
+          container.removeEventListener('mouseenter', pauseScrolling);
+          container.removeEventListener('mouseleave', resumeScrolling);
+        }
+      };
+    }
+  }, []);
 
   // Fixed WhatsApp button handler
   const handleWhatsAppClick = () => {
@@ -168,7 +169,7 @@ useEffect(() => {
               const steps = 60;
               const stepValue = target / steps;
               let current = 0;
-              
+
               const timer = setInterval(() => {
                 current += stepValue;
                 if (current >= target) {
@@ -195,24 +196,17 @@ useEffect(() => {
 
   return (
     <div className={`home ${theme}-theme`} id="home">
-      {/* Video Background */}
-      <div className="video-background">
-        <video autoPlay muted loop playsInline className="bg-video">
-          <source src={backgroundVideo} type="video/mp4" />
-        </video>
-        <div className="video-overlay"></div>
-      </div>
 
       {/* Hero Section */}
       <section className="hero">
-        <div className="container">
-          <div className="hero-content">
-            <div className="hero-text">
+        <div className="hero-content">
+          <div className="hero-text">
+            <div className='hero-main'>
               <div className="hero-badge">
                 <span>Trusted Healthcare Solutions</span>
               </div>
               <h1 className="hero-title">
-                 <span className="title-line accent">Key Innovation in</span>
+                <span className="title-line accent">Key Innovation in</span>
                 <span className="title-line"></span>
                 <span className="title-line">Your Access</span>
               </h1>
@@ -221,30 +215,34 @@ useEffect(() => {
                 to Hospitals across India and Overseas with Excellence and Reliability.
               </p>
               <div className="hero-buttons">
-                <a onClick={() => handleNavigation('/products')}  className="btn btn-primary">
+                <a onClick={() => handleNavigation('/products')} className="hero-btn btn-primary">
                   <span>Explore Products</span>
                   <i className="k fas fa-arrow-right"></i>
                 </a>
-                <a href="tel:+91 80568 05837" className="btn btn-secondary">
+                <a href="tel:+91 80568 05837" className="hero-btn btn-secondary">
                   <span>Call Now</span>
                   <i className="k fas fa-phone"></i>
                 </a>
               </div>
-              <div className="hero-stats">
-                <div className="stat-item">
-                  <span className="stat-number">24+</span>
-                  <span className="stat-label">Years of Experties</span>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-number">250+</span>
-                  <span className="stat-label">Healthcare Partners</span>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-number">3000+</span>
-                  <span className="stat-label">No of Surgeries</span>
-                </div>
-              </div>
             </div>
+          
+          <div className='hero-image'>
+            <Slider/>
+          </div>
+       </div>
+        </div>
+        <div className="hero-stats">
+          <div className="stat-item">
+            <span className="stat-number">24+</span>
+            <span className="stat-label">Years of Experties</span>
+          </div>
+          <div className="stat-item">
+            <span className="stat-number">250+</span>
+            <span className="stat-label">Healthcare Partners</span>
+          </div>
+          <div className="stat-item">
+            <span className="stat-number">3000+</span>
+            <span className="stat-label">No of Surgeries</span>
           </div>
         </div>
         <div className="scroll-indicator">
@@ -255,10 +253,10 @@ useEffect(() => {
 
       {/* Features Section */}
       <section className="features">
-        <div className="container">
+        <div className="features-container">
           <div className="section-header">
             <h2 className="section-title">Why Choose Kinya Medical Systems ?</h2>
-            <p className="section-subtitle">
+            <p className="homesection-subtitle">
               Excellence in Healthcare Delivery through Innovation, Quality and Dedicated Support
             </p>
           </div>
@@ -316,7 +314,7 @@ useEffect(() => {
 
       {/* Stats Section */}
       <section className="stats" ref={statsRef}>
-        <div className="container count">
+        <div className="stats-container count">
           <div className="stats-grid">
             {[
               { number: '24', label: 'Years of Experties', suffix: '+' },
@@ -343,10 +341,10 @@ useEffect(() => {
 
       {/* Testimonials Section */}
       <section className="testimonials">
-        <div className="container">
+        <div className="testimonials-container">
           <div className="section-header">
             <h2 className="section-title">Trusted by Healthcare Professionals</h2>
-            <p className="section-subtitle">What our partners say about our services and support</p>
+            <p className="homesection-subtitle">What our partners say about our services and support</p>
           </div>
           <div className="testimonials-container" ref={testimonialsRef}>
             <div className="testimonials-track" ref={testimonialsTrackRef}>
@@ -380,8 +378,8 @@ useEffect(() => {
 
       {/* CTA Section */}
       <section className="cta">
-        <div className="container">
-          <div className="cta-content">
+        <div className="cta-container">
+          <div className="home-cta-content">
             <h2>Ready to Enhance Your Healthcare Services?</h2>
             <p>Contact us today for a personalized consultation and discover how our solutions can transform your medical practice.</p>
             <div className="cta-buttons">
@@ -399,7 +397,7 @@ useEffect(() => {
       </section>
 
       {/* WhatsApp Floating Button */}
-      <button 
+      <button
         className="whatsapp-float"
         onClick={handleWhatsAppClick}
         aria-label="Chat with us on WhatsApp"

@@ -147,7 +147,7 @@ function Contact() {
 
   return (
     <div className={`contact-page ${isVisible ? 'page-loaded' : ''}`}>
-      <div className="container">
+      <div className="contact-container">
         {/* Header Section */}
         <div className={`contact-header ${isVisible ? 'visible' : ''}`}>
           <div className="header-icon">
@@ -174,6 +174,18 @@ function Contact() {
                 actionIcon="fas fa-external-link-alt"
                 actionText="Open in Maps"
               />
+                 
+              <ContactCard 
+                icon="fa-solid fa-building"
+                title="Our Offices"
+                details={["DELHI OFFICE - Mr.S.R. Mohapatra (+91 9911502377 / 7982411457)", 
+                          "BANGALORE OFFICE - Mr Ashokan (+91 9880264118  / 7795255782)",
+                           "MUMBAI OFFICE - Mr Sakthivel (+91 9500617481  / 8675244091)",
+                         "HYDERABAD OFFICE - Mr Mohan (+91 8754599110)",
+                        "AHMEDABAD OFFICE - Mr Mathan (+91 9825625520)",
+                       "RAIPUR OFFICE - Mr Saravan (+91  9300793139)",
+                       "NAGPUR OFFICE - Mr Amit Vishvakarma (+91 9371568902  )"   ]}
+              />
               
               <ContactCard 
                 icon="fas fa-phone"
@@ -196,8 +208,9 @@ function Contact() {
               <ContactCard 
                 icon="fas fa-clock"
                 title="Working Hours"
-                details={["Monday - Friday: 8:00 AM - 8:00 PM", "Saturday: 9:00 AM - 6:00 PM", "Sunday: Emergency Only"]}
+                details={["Monday - Friday: 8:00 AM - 8:00 PM", "Saturday: 8:00 AM - 6:00 PM", "Sunday: Emergency Only"]}
               />
+              
             </div>
           </div>
           
@@ -215,7 +228,7 @@ function Contact() {
                 {/* Prefix and Name Row */}
                 <div className="form-group prefix-group">
                   <label htmlFor="prefix">
-                    <i className="fas fa-user-tag"></i> Title *
+                    <i className="fas fa-user-tag"></i> Title <span className='star'>*</span>
                   </label>
                   <select
                     id="prefix"
@@ -235,7 +248,7 @@ function Contact() {
                 
                 <div className="form-group name-group">
                   <label htmlFor="name">
-                    <i className="fas fa-user"></i> Full Name *
+                    <i className="fas fa-user"></i> Full Name<span className='star'>*</span>
                   </label>
                   <input
                     type="text"
@@ -248,9 +261,9 @@ function Contact() {
                   />
                 </div>
                 
-                <div className="form-group">
+                <div className="form-group"> 
                   <label htmlFor="email">
-                    <i className="fas fa-envelope"></i> Email Address *
+                    <i className="fas fa-envelope"></i> Email Address <span className='star'>*</span>
                   </label>
                   <input
                     type="email"
@@ -265,7 +278,7 @@ function Contact() {
                 
                 <div className="form-group">
                   <label htmlFor="phone">
-                    <i className="fas fa-phone"></i> Phone Number *
+                    <i className="fas fa-phone"></i> Phone Number <span className='star'>*</span>
                   </label>
                   <input
                     type="tel"
@@ -280,7 +293,7 @@ function Contact() {
                 
                 <div className="form-group full-width">
                   <label htmlFor="subject">
-                    <i className="fas fa-tag"></i> Subject *
+                    <i className="fas fa-tag"></i> Subject 
                   </label>
                   <input
                     type="text"

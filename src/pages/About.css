@@ -1,5 +1,6 @@
 /* src/pages/About.css */
 .about-page {
+  font-family: "Nunito", sans-serif;
   min-height: 100vh;
   transition: all 0.3s ease;
 }
@@ -86,6 +87,7 @@ body.dark .about-page {
 .mission-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 10px;
   gap: 60px;
   align-items: center;
 }
@@ -105,7 +107,7 @@ body.dark .about-page {
 .mission-image img {
   width: 2200px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 30px;
   box-shadow: var(--shadow);
 }
 
@@ -166,7 +168,7 @@ body.dark .about-page {
 .value-card {
   background: var(--card-bg);
   padding: 40px 30px;
-  border-radius: 15px;
+  border-radius: 45px;
   text-align: center;
   box-shadow: var(--shadow);
   border: 1px solid var(--border-color);
@@ -182,7 +184,7 @@ body.dark .about-page {
   width: 80px;
   height: 80px;
   margin: 0 auto 20px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #3fdbff 0%, #0c2c2b 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -203,36 +205,24 @@ body.dark .about-page {
 /* Enhanced Offices Section */
 .offices-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 30px;
 }
 
 .office-card {
   background: var(--card-bg);
   padding: 35px 30px;
-  border-radius: 15px;
+  border-radius: 45px;
   box-shadow: var(--shadow);
   border: 1px solid var(--border-color);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   position: relative;
   overflow: hidden;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.office-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4px;
-  height: 100%;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  transition: width 0.3s ease;
-}
-
-.office-card:hover::before {
-  width: 6px;
-}
 
 .office-card:hover {
   transform: translateY(-8px) scale(1.02);
@@ -245,32 +235,34 @@ body.dark .about-page {
 }
 
 .office-card h3 {
-  color: #667eea;
+  color: #08bdbd;
   margin-bottom: 1rem;
   font-size: 1.3rem;
   font-weight: 700;
   display: flex;
   align-items: center;
+  align-self: center;
   gap: 10px;
 }
 
-.office-card h3::before {
-  content: '🏢';
-  font-size: 1.2em;
-}
 
 .office-card p {
   color: var(--text-secondary);
   margin-bottom: 1.5rem;
   line-height: 1.6;
   font-size: 0.95rem;
+  align-self: center;
 }
 
-.contact-info {
+.about-contact-info {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 12px;
   margin-top: 20px;
+  i{
+    margin-right: 10px;
+  }
 }
 
 .contact-item {
@@ -342,7 +334,7 @@ body.dark .about-page {
   text-align: center;
   font-size: 2.8rem;
   margin-bottom:1rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(140deg, #278e9bd6 0%, #02d1ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -361,14 +353,14 @@ body.dark .about-page {
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 40px;
   margin-top: -20px;
 }
 
 .team-card {
   background: var(--card-bg);
-  border-radius: 20px;
+  border-radius: 35px;
   overflow: hidden;
   box-shadow: var(--shadow);
   border: 1px solid var(--border-color);
@@ -385,7 +377,7 @@ body.dark .about-page {
 .team-image {
   position: relative;
   overflow: hidden;
-  height: 320px;
+  height: 370px;
 }
 
 .team-image img {
@@ -443,22 +435,11 @@ body.dark .about-page {
 }
 
 .team-info {
-  padding: 35px 30px;
+  margin-top: 20px;
   text-align: center;
   position: relative;
 }
 
-.team-info::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 3px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border-radius: 2px;
-}
 
 .team-info h3 {
   font-size: 1.5rem;
@@ -468,7 +449,7 @@ body.dark .about-page {
 }
 
 .role {
-  color: #667eea;
+  color: #31bedb;
   font-weight: 600;
   margin-bottom: 1.2rem;
   font-size: 1rem;
@@ -476,7 +457,7 @@ body.dark .about-page {
   padding: 6px 16px;
   background: rgba(102, 126, 234, 0.1);
   border-radius: 20px;
-  border: 1px solid rgba(102, 126, 234, 0.2);
+  border: 1px solid rgba(102, 194, 234, 0.2);
 }
 
 .bio {
@@ -515,11 +496,11 @@ body.dark .about-page {
 
 /* Professional badge for team cards */
 .team-card::after {
-  content: '👑 Leadership';
+  content: '🎖 Leadership';
   position: absolute;
   top: 20px;
   right: 20px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #13adbe 0%, #06727eb3 100%);
   color: white;
   padding: 6px 12px;
   border-radius: 15px;
@@ -547,9 +528,6 @@ body.dark .about-page {
     margin-bottom: 1px;
   }
   
-  .team-info {
-    padding: 25px 20px;
-  }
 }
 
 /* Loading states for better UX */
@@ -566,8 +544,7 @@ body.dark .about-page {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
-  animation: loading 1.5s infinite;
+
 }
 
 @keyframes loading {
@@ -578,7 +555,7 @@ body.dark .about-page {
 /* CTA Section */
 .about-cta {
   padding: 100px 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0b7c89 0%, #05b5c9e5 50%, #07707be5 100%);
   text-align: center;
   color: white;
 }
@@ -612,14 +589,14 @@ body.dark .about-page {
   transform: translateY(0);
 }
 
-.btn {
+.cta-btn {
   display: inline-block;
   padding: 15px 30px;
   background: white;
-  color: #667eea;
+  color: #136ac1;
   text-decoration: none;
-  border-radius: 5px;
-  font-weight: 600;
+  border-radius: 20px;
+  font-weight: 800;
   transition: all 0.3s ease;
 }
 

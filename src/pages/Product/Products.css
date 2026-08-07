@@ -1,11 +1,13 @@
 /* Enhanced Products Page Styles */
 .products-page {
+   font-family: "Nunito", sans-serif;
   min-height: 100vh;
   padding: 2rem 0;
   background: var(--page-background, linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%));
   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
   animation: pageEntrance 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  list-style-type: r;
 }
 
 @keyframes pageEntrance {
@@ -19,10 +21,9 @@
   }
 }
 
-.container {
-  max-width: 1400px;
+.product-container {
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 0.8rem;
   animation: containerSlideIn 1s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
 }
 
@@ -45,7 +46,6 @@
   overflow: hidden;
   background: linear-gradient(135deg, 
     var(--hero-gradient-1, rgba(44, 90, 160, 0.08)) 0%,
-    var(--hero-gradient-2, rgba(74, 144, 226, 0.05)) 50%,
     var(--hero-gradient-3, rgba(255, 107, 107, 0.03)) 100%);
   animation: heroReveal 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.5s both;
   border-radius: 0 0 40px 40px;
@@ -63,15 +63,14 @@
   }
 }
 
-.page-title {
-  font-size: 4rem;
-  font-weight: 800;
-  background: linear-gradient(135deg, var(--primary-color, #2c5aa0), var(--secondary-color, #4a90e2), var(--accent-color, #ff6b6b));
+.productpage-title {
+  font-size: 3rem;
+  font-weight: 600;
+  background: white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   background-size: 300% 300%;
-  animation: titleShimmer 4s ease-in-out infinite, titleFloat 6s ease-in-out infinite;
   position: relative;
   display: inline-block;
   letter-spacing: -0.02em;
@@ -87,17 +86,17 @@
   50% { transform: translateY(-8px); }
 }
 
-.page-title::after {
+.productpage-title::after {
   content: '';
   position: absolute;
-  bottom: -15px;
+  bottom: -3px;
   left: 50%;
   transform: translateX(-50%);
-  width: 150px;
-  height: 5px;
-  background: linear-gradient(90deg, var(--primary-color, #2c5aa0), var(--secondary-color, #4a90e2));
+  width: 100px;
+  height: 2px;
+  background: white;
   border-radius: 3px;
-  animation: linePulse 3s ease-in-out infinite;
+  
 }
 
 @keyframes linePulse {
@@ -105,14 +104,13 @@
   50% { opacity: 0.8; transform: translateX(-50%) scaleX(1.1); }
 }
 
-.page-subtitle {
+.productpage-subtitle {
   font-size: 1.4rem;
-  color: var(--text-secondary, #666);
+  color: white;
   max-width: 700px;
-  margin: 0 auto 3rem;
-  line-height: 1.7;
+  margin: 1rem auto 1rem;
   animation: subtitleFadeIn 1s ease-out 0.8s both;
-  font-weight: 400;
+  font-weight: 300;
   opacity: 0.9;
 }
 
@@ -125,52 +123,6 @@
     opacity: 0.9;
     transform: translateY(0);
   }
-}
-
-.hero-decoration {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 0;
-}
-
-.decoration-circle {
-  position: absolute;
-  border-radius: 50%;
-  opacity: 0.1;
-  filter: blur(40px);
-  animation-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
-}
-
-.decoration-circle:nth-child(1) {
-  width: 400px;
-  height: 400px;
-  background: var(--primary-color, #2c5aa0);
-  top: 10%;
-  left: 5%;
-  animation: float 12s ease-in-out infinite, pulseGlow 8s ease-in-out infinite;
-}
-
-.decoration-circle:nth-child(2) {
-  width: 300px;
-  height: 300px;
-  background: var(--secondary-color, #4a90e2);
-  top: 60%;
-  right: 5%;
-  animation: float 15s ease-in-out infinite reverse, pulseGlow 10s ease-in-out infinite 2s;
-}
-
-.decoration-circle:nth-child(3) {
-  width: 250px;
-  height: 250px;
-  background: var(--accent-color, #ff6b6b);
-  bottom: 20%;
-  left: 15%;
-  animation: float 18s ease-in-out infinite, pulseGlow 12s ease-in-out infinite 4s;
 }
 
 @keyframes float {
@@ -208,19 +160,20 @@
 }
 
 .filter-btn {
+  font-family: "Nunito", sans-serif;
   display: flex;
   align-items: center;
   gap: 0.8rem;
-  padding: 1rem 1.8rem;
+  padding: 0.8rem 3rem;
   border: 2px solid transparent;
   background: linear-gradient(45deg, var(--card-background, #ffffff), var(--card-background, #ffffff)) padding-box,
               linear-gradient(45deg, var(--border-color, #e1e5e9), var(--border-color, #e1e5e9)) border-box;
   color: var(--text-primary, #333);
-  border-radius: 65px;
+  border-radius: 25px;
   cursor: pointer;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  font-weight: 600;
-  font-size: 1.1rem;
+  font-weight: 700;
+  font-size: 0.9rem;
   backdrop-filter: blur(20px);
   position: relative;
   overflow: hidden;
@@ -316,12 +269,13 @@
 
 .category-header {
   text-align: center;
-  margin-bottom: 2.8rem;
+  margin-bottom: 3.8rem;
+  margin-top: 3.8rem;
 }
 
 .category-title {
-  font-size: 3.2rem;
-  font-weight: 700;
+  font-size: 2.2rem;
+  font-weight: 800;
   color: var(--text-primary, #333);
   display: flex;
   align-items: center;
@@ -333,8 +287,7 @@
 }
 
 .category-icon {
-  font-size: 2.8rem;
-  animation: iconBounce 3s ease-in-out infinite;
+  font-size: 2.2rem;
 }
 
 @keyframes iconBounce {
@@ -343,25 +296,16 @@
 }
 
 .category-line {
-  width: 200px;
-  height: 6px;
-  background: linear-gradient(90deg, var(--primary-color, #2c5aa0), var(--secondary-color, #4a90e2), var(--accent-color, #ff6b6b));
+  width: 150px;
+  height: 5px;
+  background: linear-gradient(90deg, var(--primary-color, #3182ce), var(--secondary-color,  #3182ce));
   margin: 0 auto;
   border-radius: 4px;
   position: relative;
   overflow: hidden;
 }
 
-.category-line::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.9), transparent);
-  animation: lineShine 4s ease-in-out infinite;
-}
+
 
 @keyframes lineShine {
   0% { left: -100%; }
@@ -378,7 +322,7 @@
 
 .product-card {
   background: var(--card-background, #ffffff);
-  border-radius: 32px;
+  border-radius: 40px;
   overflow: hidden;
   box-shadow: 0 15px 50px var(--shadow-color, rgba(0,0,0,0.12));
   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
@@ -408,11 +352,12 @@
   left: 0;
   right: 0;
   height: 6px;
-  background: linear-gradient(90deg, var(--primary-color, #2c5aa0), var(--secondary-color, #4a90e2), var(--accent-color, #ff6b6b));
+  background: linear-gradient(90deg, var(--primary-color, #2c5aa0), var(--secondary-color, #4a90e2), var(--accent-color, #2b8dfe));
   transform: scaleX(0);
   transition: transform 0.6s ease;
   z-index: 2;
 }
+
 
 .product-card:hover::before {
   transform: scaleX(1);
@@ -623,9 +568,9 @@ body.dark-theme {
   --border-color: #334155;
   --shadow-color: rgba(0, 0, 0, 0.4);
   --shadow-hover: rgba(0, 0, 0, 0.6);
-  --primary-color: #6366f1;
-  --secondary-color: #818cf8;
-  --accent-color: #f87171;
+  --primary-color: #24bfd0;
+  --secondary-color: #45c9c9;
+  --accent-color: #4da9ff;
   --primary-dark: #3730a3;
   --primary-shadow: rgba(99, 102, 241, 0.3);
   --overlay-color: rgba(0, 0, 0, 0.7);
@@ -643,15 +588,15 @@ body.light-theme {
   --border-color: #e2e8f0;
   --shadow-color: rgba(0, 0, 0, 0.08);
   --shadow-hover: rgba(0, 0, 0, 0.15);
-  --primary-color: #3b82f6;
-  --secondary-color: #60a5fa;
-  --accent-color: #ef4444;
+  --primary-color: #3182ce;
+  --secondary-color: rgb(21, 100, 174);
+  --accent-color:#3faeaa;
   --primary-dark: #1d4ed8;
   --primary-shadow: rgba(59, 130, 246, 0.2);
   --overlay-color: rgba(0, 0, 0, 0.05);
-  --hero-gradient-1: rgba(59, 130, 246, 0.05);
-  --hero-gradient-2: rgba(96, 165, 250, 0.03);
-  --hero-gradient-3: rgba(239, 68, 68, 0.02);
+  --hero-gradient-1: #2480d7;
+  --hero-gradient-2: rgba(0, 251, 255, 0.545);
+  --hero-gradient-3:#3182ce;
   --image-background: #f8fafc;
 }
 
@@ -673,19 +618,14 @@ body.light-theme {
     padding: 4rem 0 3rem;
   }
   
-  .page-title {
-    font-size: 3.2rem;
+  .productpage-title {
+    font-size: 2.6rem;
   }
   
   .category-filter {
     gap: 1.2rem;
   }
-  
-  .filter-btn {
-    padding: 1.1rem 2.2rem;
-    font-size: 1rem;
-  }
-  
+
   .product-grid {
     grid-template-columns: 1fr;
     gap: 2.5rem;
@@ -708,17 +648,16 @@ body.light-theme {
   }
   
   .products-hero {
-    padding: 3rem 0 2rem;
+    padding:3rem 0 3rem;
     border-radius: 0 0 30px 30px;
   }
   
-  .page-title {
-    font-size: 2.8rem;
+  .productpage-title {
+    font-size: 2rem;
   }
   
-  .page-subtitle {
+  .productpage-subtitle {
     font-size: 1.2rem;
-    margin-bottom: 2rem;
   }
   
   .category-filter {
@@ -731,7 +670,7 @@ body.light-theme {
   .filter-btn {
     width: 280px;
     justify-content: center;
-    padding: 1.2rem 2rem;
+    
   }
  
   
@@ -775,7 +714,7 @@ body.light-theme {
   }
   
   .products-hero {
-    padding: 2.5rem 0 1.5rem;
+    padding: 2rem 0 1.5rem;
     margin-top: 10px;
   }
   

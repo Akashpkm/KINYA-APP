@@ -41,7 +41,7 @@ function Certification() {
     <div className="certification-page">
       {/* Simplified Hero Section */}
       <section className="certification-hero">
-        <div className="container">
+        <div className="certificate-container">
           <h1>Certifications & Compliance</h1>
           <p>Demonstrating our commitment to quality and regulatory excellence</p>
         </div>

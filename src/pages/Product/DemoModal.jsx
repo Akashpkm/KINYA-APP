@@ -182,7 +182,7 @@ const DemoModal = ({
             </button>
             <button 
               type="submit" 
-              className="submit-btn" 
+              className="productsubmit-btn" 
               disabled={isSubmitting}
             >
               {isSubmitting ? (

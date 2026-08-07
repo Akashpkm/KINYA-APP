@@ -2,8 +2,8 @@
 .footer {
   background: linear-gradient(135deg, #1a2a3a 0%, #2d3b4a 100%);
   color: #ffffff;
-  padding: 60px 0 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 30px 0 0;
+  font-family: "Nunito", sans-serif;
   position: relative;
   overflow: hidden;
 }
@@ -19,7 +19,7 @@
 }
 
 .footer-container {
-  max-width: 1200px;
+  max-width: 1800px;
   margin: 0 auto;
   padding: 0 20px;
   display: grid;
@@ -40,11 +40,11 @@
 
 .footer-logo {
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 800;
   color: #4fc3f7;
   margin-bottom: 8px;
   letter-spacing: 0.5px;
-  background: linear-gradient(135deg, #4fc3f7 0%, #29b6f6 100%);
+  background: linear-gradient(137deg, #1bdcff 0%, #54b2b3 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -79,7 +79,7 @@
   width: 42px;
   height: 42px;
   background: linear-gradient(135deg, #37474f 0%, #455a64 100%);
-  border-radius: 8px;
+  border-radius: 13px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,7 +116,7 @@
 .footer-heading {
   font-size: 16px;
   font-weight: 700;
-  color: #4fc3f7;
+  color: #1cdff9;
   margin-bottom: 24px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -131,7 +131,7 @@
   left: 0;
   width: 30px;
   height: 2px;
-  background: #4fc3f7;
+  background: #1dd9fb;
   border-radius: 2px;
 }
 
@@ -188,30 +188,30 @@
 }
 
 /* Contact Information */
-.contact-info {
+.footer-contact-info {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
 
-.contact-item {
+.footer-contact-item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 15px;
   padding: 12px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   transition: all 0.3s ease;
 }
 
-.contact-item:hover {
+.footer-contact-item:hover {
   border-bottom-color: rgba(79, 195, 247, 0.3);
 }
 
-.contact-item.clickable {
+.footer-contact-item.clickable {
   cursor: pointer;
 }
 
-.contact-item.clickable:hover .contact-text {
+.footer-contact-item.clickable:hover .contact-text {
   color: #4fc3f7;
 }
 
@@ -219,15 +219,14 @@
   width: 36px;
   height: 36px;
   background: rgba(79, 195, 247, 0.1);
-  border-radius: 6px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
 }
 
-.contact-icon {
-  color: #4fc3f7;
+.footer-contact-icon {
   font-size: 14px;
 }
 
@@ -241,16 +240,14 @@
 
 /* Footer Bottom */
 .footer-bottom {
-  margin-top: 60px;
-  background: rgba(0, 0, 0, 0.3);
-  padding: 25px 0;
+  padding: 18px 0;
   backdrop-filter: blur(10px);
 }
 
 .footer-divider {
   height: 1px;
   background: linear-gradient(90deg, transparent 0%, #4fc3f7 20%, #4fc3f7 80%, transparent 100%);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   opacity: 0.5;
 }
 
@@ -333,7 +330,7 @@
     display: none;
   }
   
-  .contact-item {
+  .footer-contact-item {
     justify-content: center;
     text-align: center;
     flex-direction: column;
@@ -387,7 +384,7 @@
   outline-offset: 2px;
 }
 
-.contact-item.clickable:focus {
+.footer-contact-item.clickable:focus {
   outline: 2px solid #4fc3f7;
   outline-offset: 4px;
   border-radius: 4px;

@@ -95,10 +95,10 @@ function Footer() {
         
         <div className="footer-section">
           <h4 className="footer-heading">Contact Information</h4>
-          <div className="contact-info">
-            <div className="contact-item">
+          <div className="footer-contact-info">
+            <div className="footer-contact-item">
               <div className="contact-icon-wrapper">
-                <i className="fas fa-map-marker-alt contact-icon"></i>
+                <i className="fas fa-map-marker-alt footer-contact-icon"></i>
               </div>
               <span className="contact-text">
                 No 46 Ranga Rice Mill Building, Big Street,  Big Street, Nandhivaram, Guduvancheri<br />
@@ -106,21 +106,21 @@ function Footer() {
                  
               </span>
             </div>
-            <div className="contact-item clickable" onClick={handlePhoneClick}>
+            <div className="footer-contact-item clickable" onClick={handlePhoneClick}>
               <div className="contact-icon-wrapper">
-                <i className="fas fa-phone contact-icon"></i>
+                <i className="fas fa-phone footer-contact-icon"></i>
               </div>
               <span className="contact-text">+91 9789041308</span>
             </div>
-            <div className="contact-item clickable" onClick={handleEmailClick}>
+            <div className="footer-contact-item clickable" onClick={handleEmailClick}>
               <div className="contact-icon-wrapper">
-                <i className="fas fa-envelope contact-icon"></i>
+                <i className="fas fa-envelope footer-contact-icon"></i>
               </div>
               <span className="contact-text">sales@kinya.in</span>
             </div>
-            <div className="contact-item">
+            <div className="footer-contact-item">
               <div className="contact-icon-wrapper">
-                <i className="fas fa-clock contact-icon"></i>
+                <i className="fas fa-clock footer-contact-icon"></i>
               </div>
               <div className="contact-text">
                 <div>Mon - Fri: 8:00 AM – 8:00 PM</div>

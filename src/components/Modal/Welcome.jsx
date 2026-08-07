@@ -35,7 +35,7 @@ function WelcomeModal() {
           <img src={logo} alt="Kinya Logo" className="wm-logo" />
 
           <h2 className="wm-subtitle">
-            Kinya Medical Systems & Solutions
+            KINYA MEDICAL SYSTEMS & SOLUTION
           </h2>
 
           <p className="wm-desc">
@@ -44,20 +44,13 @@ function WelcomeModal() {
           </p>
 
           <div className="kinya">
-            <ul className="wm-list">
-              <li><span>K</span> - Key</li>
-              <li><span>I</span> - Innovation</li>
-              <li><span>N</span> -  IN</li>
-              <li><span>Y</span> - Your</li>
-              <li><span>A</span> - Access</li>
-            </ul>
+            <h4>KEY INNOVATION IN YOUR ACCESS</h4>
 
             <div className="info">
-              <p>📞 +91 9789041308</p>
-              <p>📧 sales@kinya.in</p>
+              <a href="tel:9789041308" className="modal-btn btn-contact"><i className="fas fa-phone"></i> Contact Now</a>
+              <a href="mailto:sales@kinya.in"className="modal-btn btn-email"><i className="fas fa-envelope"></i>Email </a><p> </p>
             </div>
           </div>
-
         </div>
       </div>
     </div>

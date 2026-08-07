@@ -14,6 +14,7 @@ import Contact from './pages/Contact';
 import './App.css';
 import img from './assets/kinya.png'
 
+
 function App() {
    const [loading, setLoading] = useState(true);
 
@@ -29,8 +30,7 @@ function App() {
   }, []);
 
 
- 
-   return(
+return(
  <Router>
   {/* Overlay Loader */}
       {loading && (
@@ -44,20 +44,16 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/product/:productId" element={<ProductDetail />} />
+          <Route path="/products/:productId" element={<ProductDetail />} />
           <Route path="/video" element={<Video />} />
            <Route path="/certification" element={<Certification />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <Footer />
-    
+        <Footer/>
       </div>
     </Router>
-
   );
- 
- 
 }
 
 export default App;

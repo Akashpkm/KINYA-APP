@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
-import img from "./kinya.png";
+import img from "./KINYALOGO.png";
 
 function Navbar({ onThemeChange }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -13,7 +13,7 @@ function Navbar({ onThemeChange }) {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
-    
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -23,7 +23,7 @@ function Navbar({ onThemeChange }) {
     const themeClass = isDarkTheme ? 'dark-theme' : 'light-theme';
     document.body.className = themeClass;
     localStorage.setItem('theme', themeClass);
-    
+
     if (onThemeChange) {
       onThemeChange(isDarkTheme);
     }
@@ -88,9 +88,9 @@ function Navbar({ onThemeChange }) {
     <>
       <nav className={`navbar ${isScrolled ? 'scrolled' : ''} ${isDarkTheme ? 'dark' : 'light'}`}>
         <div className="nav-container">
-          <Link 
-            to="/" 
-            className="nav-logo" 
+          <Link
+            to="/"
+            className="nav-logo"
             onClick={() => {
               closeMobileMenu();
               scrollToTop();
@@ -104,13 +104,19 @@ function Navbar({ onThemeChange }) {
               </div>
             </div>
           </Link>
-          
+
           <ul className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}>
             {navItems.map((item) => (
               <li className="nav-item" key={item.id}>
-                <Link 
+                <Link
                   to={item.path}
-                  className={`nav-link ${getActiveSection() === item.id ? 'active' : ''}`}
+                  className={`nav-link ${location.pathname.startsWith(item.path) &&
+                      item.path !== "/"
+                      ? "active"
+                      : location.pathname === "/" && item.path === "/"
+                        ? "active"
+                        : ""
+                    }`}
                   onClick={handleNavigation}
                 >
                   <i className={item.icon}></i>
@@ -118,10 +124,10 @@ function Navbar({ onThemeChange }) {
                 </Link>
               </li>
             ))}
-            
+
             {/* Theme Toggle Button in Menu */}
             <li className="nav-item theme-toggle-mobile">
-              <button 
+              <button
                 className={`theme-toggle-btn ${isDarkTheme ? 'dark' : 'light'}`}
                 onClick={toggleTheme}
                 aria-label="Toggle theme"
@@ -131,10 +137,10 @@ function Navbar({ onThemeChange }) {
               </button>
             </li>
           </ul>
-          
+
           {/* Desktop Theme Toggle */}
           <div className="nav-actions">
-            <button 
+            <button
               className={`theme-toggle-btn desktop ${isDarkTheme ? 'dark' : 'light'}`}
               onClick={toggleTheme}
               aria-label="Toggle theme"
@@ -144,7 +150,7 @@ function Navbar({ onThemeChange }) {
           </div>
 
           {/* Hamburger Menu */}
-          <div 
+          <div
             className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`}
             onClick={toggleMobileMenu}
             aria-label="Toggle menu"
@@ -155,9 +161,9 @@ function Navbar({ onThemeChange }) {
           </div>
         </div>
       </nav>
-      
+
       {/* Overlay for mobile menu */}
-      <div 
+      <div
         className={`mobile-overlay ${isMobileMenuOpen ? 'active' : ''}`}
         onClick={closeMobileMenu}
       ></div>
